@@ -1,0 +1,7 @@
+verilog work "src/Pulser.v"
+verilog work "ipcore_dir/ila_0.v"
+verilog work "ipcore_dir/icon_0.v"
+verilog work "ipcore_dir/Data_FIFO.v"
+verilog work "src/Phase_TDC.v"
+verilog work "ipcore_dir/DATA_16CH_IN_1.v"
+verilog work "src/PTDC_16CH.v"

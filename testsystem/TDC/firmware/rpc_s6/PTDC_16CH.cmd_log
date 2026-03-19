@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "E:/Yun/computer/project/JUNO/RPC/FPGA/rpc_s6/PTDC_16CH.xst" -ofn "E:/Yun/computer/project/JUNO/RPC/FPGA/rpc_s6/PTDC_16CH.syr" 
+xst -intstyle ise -ifn "//ISE-PC/Users/Public/rpc_s6/PTDC_16CH.xst" -ofn "//ISE-PC/Users/Public/rpc_s6/PTDC_16CH.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 PTDC_16CH.ngc PTDC_16CH.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PTDC_16CH_map.ncd PTDC_16CH.ngd PTDC_16CH.pcf 
+par -w -intstyle ise -ol high -mt off PTDC_16CH_map.ncd PTDC_16CH.ncd PTDC_16CH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PTDC_16CH.twx PTDC_16CH.ncd -o PTDC_16CH.twr PTDC_16CH.pcf 
+bitgen -intstyle ise -f PTDC_16CH.ut PTDC_16CH.ncd 

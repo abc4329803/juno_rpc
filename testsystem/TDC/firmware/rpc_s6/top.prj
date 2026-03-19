@@ -1,0 +1,8 @@
+verilog work "ipcore_dir/Data_FIFO.v"
+verilog work "src/TIMER.v"
+verilog work "src/Phase_TDC.v"
+verilog work "src/manchester/manchester_encoder.v"
+verilog work "ipcore_dir/Coarse_Time_Counter.v"
+verilog work "ipcore_dir/ALL_CHANNEL_DATA.v"
+verilog work "src/TDC_datapack.v"
+verilog work "top.v"

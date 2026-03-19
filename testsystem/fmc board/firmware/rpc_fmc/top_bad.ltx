@@ -1,0 +1,464 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "79999993"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "ila_5",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "4C1626D8274C574DB0DCF2F6E15C72E6",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "SP6_DATA_VALID",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "FB_OUT_1",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "state_reg1",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "state_reg1[1]",
+                                                "parentNetId": 2
+                                            },
+                                            {
+                                                "name": "state_reg1[0]",
+                                                "parentNetId": 3
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "DATA_SERIAL",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "state_reg",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "data_shift",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "data_shift[3]"
+                                            },
+                                            {
+                                                "name": "data_shift[2]"
+                                            },
+                                            {
+                                                "name": "data_shift[1]"
+                                            },
+                                            {
+                                                "name": "data_shift[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "TDC_decode_data",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "TDC_decode_data[31]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[30]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[29]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[28]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[27]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[26]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[25]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[24]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[23]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[22]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[21]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[20]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[19]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[18]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[17]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[16]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[15]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[14]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[13]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[12]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[11]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[10]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[9]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[8]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[7]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[6]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[5]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[4]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[3]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[2]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[1]"
+                                            },
+                                            {
+                                                "name": "TDC_decode_data[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "TDC_decode_data_valid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "sample_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "sample_cnt[3]"
+                                            },
+                                            {
+                                                "name": "sample_cnt[2]"
+                                            },
+                                            {
+                                                "name": "sample_cnt[1]"
+                                            },
+                                            {
+                                                "name": "sample_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "sync_data",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "sync_data[3]"
+                                            },
+                                            {
+                                                "name": "sync_data[2]"
+                                            },
+                                            {
+                                                "name": "sync_data[1]"
+                                            },
+                                            {
+                                                "name": "sync_data[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "sync_shift",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "clk_10M_coding",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "clk_20M_coding",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe13",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "DOUT1",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 2,
+                        "name": "TDC_data_receive1/tdc_data_dec/state_reg1[1]",
+                        "state_reg": [
+                            {
+                                "name": "TDC_data_receive1/tdc_data_dec/state_reg1_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "WAIT",
+                                        "val": "00"
+                                    },
+                                    {
+                                        "name": "SEARCH",
+                                        "val": "01"
+                                    },
+                                    {
+                                        "name": "DATA1",
+                                        "val": "10"
+                                    },
+                                    {
+                                        "name": "DATA2",
+                                        "val": "11"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "name": "TDC_data_receive1/tdc_data_dec/state_reg1[0]",
+                        "state_reg": [
+                            {
+                                "name": "TDC_data_receive1/tdc_data_dec/state_reg1_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "WAIT",
+                                        "val": "00"
+                                    },
+                                    {
+                                        "name": "SEARCH",
+                                        "val": "01"
+                                    },
+                                    {
+                                        "name": "DATA1",
+                                        "val": "10"
+                                    },
+                                    {
+                                        "name": "DATA2",
+                                        "val": "11"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

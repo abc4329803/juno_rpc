@@ -1,0 +1,17 @@
+# Output products list for <Coarse_Time_Counter>
+Coarse_Time_Counter.asy
+Coarse_Time_Counter.gise
+Coarse_Time_Counter.ngc
+Coarse_Time_Counter.sym
+Coarse_Time_Counter.v
+Coarse_Time_Counter.veo
+Coarse_Time_Counter.xco
+Coarse_Time_Counter.xise
+Coarse_Time_Counter\doc\c_counter_binary_v11_0_readme.txt
+Coarse_Time_Counter\doc\c_counter_binary_v11_0_vinfo.html
+Coarse_Time_Counter\doc\ds215_counter.pdf
+Coarse_Time_Counter_flist.txt
+Coarse_Time_Counter_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+core_resources.txt
+gui_latency.txt

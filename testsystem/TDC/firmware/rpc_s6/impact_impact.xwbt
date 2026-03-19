@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Public\rpc_s6\impact.xsl
+OUTFILE=C:\Users\Public\rpc_s6\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\Public\rpc_s6
+LICENSE=iMPACT
+USER_INFO=iMPACT

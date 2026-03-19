@@ -1,0 +1,485 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'PTDC_16CH'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o PTDC_16CH_map.ncd PTDC_16CH.ngd PTDC_16CH.pcf 
+Target Device  : xc6slx9
+Target Package : ftg256
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Fri May 02 10:49:05 2025
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Slice Logic Utilization:
+  Number of Slice Registers:                 2,076 out of  11,440   18%
+    Number used as Flip Flops:               2,076
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      1,661 out of   5,720   29%
+    Number used as logic:                    1,428 out of   5,720   24%
+      Number using O6 output only:           1,257
+      Number using O5 output only:               2
+      Number using O5 and O6:                  169
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   1,440    0%
+    Number used exclusively as route-thrus:    233
+      Number with same-slice register load:    233
+      Number with same-slice carry load:         0
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   710 out of   1,430   49%
+  Number of MUXCYs used:                         0 out of   2,860    0%
+  Number of LUT Flip Flop pairs used:        2,139
+    Number with an unused Flip Flop:           376 out of   2,139   17%
+    Number with an unused LUT:                 478 out of   2,139   22%
+    Number of fully used LUT-FF pairs:       1,285 out of   2,139   60%
+    Number of unique control sets:             120
+    Number of slice register sites lost
+      to control set restrictions:             468 out of  11,440    4%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       129 out of     186   69%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB8BWERs:                         18 out of      64   28%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       6 out of      16   37%
+    Number used as BUFGs:                        6
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     200    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      16    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                2.92
+
+Peak Memory Usage:  394 MB
+Total REAL time to MAP completion:  18 secs 
+Total CPU time to MAP completion:   18 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network [7].PTDC_0/Data_FIFO/s_axis_tready has no load.
+INFO:LIT:395 - The above info message is repeated 7 more times for the following
+   (max. 5 shown):
+   [6].PTDC_0/Data_FIFO/s_axis_tready,
+   [5].PTDC_0/Data_FIFO/s_axis_tready,
+   [4].PTDC_0/Data_FIFO/s_axis_tready,
+   [3].PTDC_0/Data_FIFO/s_axis_tready,
+   [2].PTDC_0/Data_FIFO/s_axis_tready
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  16 block(s) removed
+  21 block(s) optimized away
+  17 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "DATA_16CH_IN_1/U0/xst_fifo_generator/inverted_reset" is sourceless
+and has been removed.
+The signal "[7].PTDC_0/Data_FIFO/s_axis_tready" is sourceless and has been
+removed.
+The signal
+"[7].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+ Sourceless block
+"[7].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.axis_s_axis_tready1_INV_0
+" (BUF) removed.
+The signal "[6].PTDC_0/Data_FIFO/s_axis_tready" is sourceless and has been
+removed.
+The signal
+"[6].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+ Sourceless block
+"[6].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.axis_s_axis_tready1_INV_0
+" (BUF) removed.
+The signal "[5].PTDC_0/Data_FIFO/s_axis_tready" is sourceless and has been
+removed.
+The signal
+"[5].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+ Sourceless block
+"[5].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.axis_s_axis_tready1_INV_0
+" (BUF) removed.
+The signal "[4].PTDC_0/Data_FIFO/s_axis_tready" is sourceless and has been
+removed.
+The signal
+"[4].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+ Sourceless block
+"[4].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.axis_s_axis_tready1_INV_0
+" (BUF) removed.
+The signal "[3].PTDC_0/Data_FIFO/s_axis_tready" is sourceless and has been
+removed.
+The signal
+"[3].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+ Sourceless block
+"[3].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.axis_s_axis_tready1_INV_0
+" (BUF) removed.
+The signal "[2].PTDC_0/Data_FIFO/s_axis_tready" is sourceless and has been
+removed.
+The signal
+"[2].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+ Sourceless block
+"[2].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.axis_s_axis_tready1_INV_0
+" (BUF) removed.
+The signal "[1].PTDC_0/Data_FIFO/s_axis_tready" is sourceless and has been
+removed.
+The signal
+"[1].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+ Sourceless block
+"[1].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.axis_s_axis_tready1_INV_0
+" (BUF) removed.
+The signal "[0].PTDC_0/Data_FIFO/s_axis_tready" is sourceless and has been
+removed.
+The signal
+"[0].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+ Sourceless block
+"[0].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.axis_s_axis_tready1_INV_0
+" (BUF) removed.
+Unused block
+"[0].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"[1].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"[2].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"[3].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"[4].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"[5].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"[6].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block
+"[7].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_
+or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND
+		DATA_16CH_IN_1/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sy
+nc_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XS
+T_GND
+INV 		DATA_16CH_IN_1/U0/xst_fifo_generator/inverted_reset1_INV_0
+GND 		DATA_16CH_IN_1/XST_GND
+GND 		XST_GND
+VCC 		XST_VCC
+GND
+		[0].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv
+_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.c
+str/XST_GND
+GND 		[0].PTDC_0/Data_FIFO/XST_GND
+GND
+		[1].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv
+_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.c
+str/XST_GND
+GND 		[1].PTDC_0/Data_FIFO/XST_GND
+GND
+		[2].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv
+_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.c
+str/XST_GND
+GND 		[2].PTDC_0/Data_FIFO/XST_GND
+GND
+		[3].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv
+_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.c
+str/XST_GND
+GND 		[3].PTDC_0/Data_FIFO/XST_GND
+GND
+		[4].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv
+_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.c
+str/XST_GND
+GND 		[4].PTDC_0/Data_FIFO/XST_GND
+GND
+		[5].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv
+_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.c
+str/XST_GND
+GND 		[5].PTDC_0/Data_FIFO/XST_GND
+GND
+		[6].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv
+_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.c
+str/XST_GND
+GND 		[6].PTDC_0/Data_FIFO/XST_GND
+GND
+		[7].PTDC_0/Data_FIFO/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv
+_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.c
+str/XST_GND
+GND 		[7].PTDC_0/Data_FIFO/XST_GND
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| HIT<0>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| HIT<1>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| HIT<2>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| HIT<3>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| HIT<4>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| HIT<5>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| HIT<6>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| HIT<7>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| M_FULL_DATA<0>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<1>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<2>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<3>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<4>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<5>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<6>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<7>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<8>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<9>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<10>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<11>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<12>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<13>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<14>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<15>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<16>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<17>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<18>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<19>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<20>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<21>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<22>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<23>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<24>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<25>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<26>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<27>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<28>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<29>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<30>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<31>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<32>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<33>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<34>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<35>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<36>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<37>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<38>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<39>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<40>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<41>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<42>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<43>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<44>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<45>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<46>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<47>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<48>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<49>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<50>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<51>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<52>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<53>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<54>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<55>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<56>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<57>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<58>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<59>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<60>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<61>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<62>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA<63>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| M_FULL_DATA_READY                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| M_FULL_DATA_VALID                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| clk125                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| clk250_0                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| clk250_90                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| clk250_180                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| clk250_270                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| clkm                               | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<0>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<1>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<2>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<3>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<4>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<5>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<6>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<7>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<8>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<9>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<10>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<11>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<12>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<13>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<14>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<15>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<16>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<17>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<18>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<19>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<20>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<21>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<22>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<23>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<24>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<25>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<26>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<27>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<28>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<29>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<30>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<31>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<32>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<33>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<34>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<35>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<36>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<37>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<38>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<39>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<40>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<41>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<42>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<43>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<44>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<45>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<46>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| coarse_time<47>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| reset                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

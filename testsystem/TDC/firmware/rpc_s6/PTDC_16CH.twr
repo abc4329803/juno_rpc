@@ -1,0 +1,296 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml PTDC_16CH.twx PTDC_16CH.ncd -o PTDC_16CH.twr PTDC_16CH.pcf
+
+Design file:              PTDC_16CH.ncd
+Physical constraint file: PTDC_16CH.pcf
+Device,package,speed:     xc6slx9,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk125
+-----------------+------------+------------+------------+------------+------------------+--------+
+                 |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source           | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-----------------+------------+------------+------------+------------+------------------+--------+
+M_FULL_DATA_READY|    6.499(R)|      SLOW  |   -0.777(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<0>   |    5.407(R)|      SLOW  |   -0.388(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<1>   |    4.524(R)|      SLOW  |    0.145(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<2>   |    3.880(R)|      SLOW  |    0.174(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<3>   |    4.087(R)|      SLOW  |   -0.094(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<4>   |    4.711(R)|      SLOW  |   -0.047(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<5>   |    3.849(R)|      SLOW  |   -0.430(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<6>   |    4.637(R)|      SLOW  |   -0.321(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<7>   |    3.937(R)|      SLOW  |   -0.370(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<8>   |    4.170(R)|      SLOW  |   -0.309(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<9>   |    3.374(R)|      SLOW  |   -0.085(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<10>  |    3.829(R)|      SLOW  |   -0.378(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<11>  |    3.358(R)|      SLOW  |    0.091(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<12>  |    3.471(R)|      SLOW  |   -0.299(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<13>  |    3.783(R)|      SLOW  |    0.162(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<14>  |    3.332(R)|      SLOW  |   -0.083(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<15>  |    3.466(R)|      SLOW  |    0.175(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<16>  |    3.664(R)|      SLOW  |   -0.208(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<17>  |    2.951(R)|      SLOW  |    0.009(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<18>  |    3.241(R)|      SLOW  |   -0.172(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<19>  |    2.868(R)|      SLOW  |   -0.010(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<20>  |    3.371(R)|      SLOW  |    0.192(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<21>  |    4.596(R)|      SLOW  |   -0.283(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<22>  |    3.035(R)|      SLOW  |   -0.242(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<23>  |    4.033(R)|      SLOW  |   -0.033(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<24>  |    4.725(R)|      SLOW  |   -0.121(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<25>  |    2.680(R)|      SLOW  |   -0.016(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<26>  |    2.866(R)|      SLOW  |    0.042(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<27>  |    2.335(R)|      SLOW  |    0.046(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<28>  |    4.173(R)|      SLOW  |    0.178(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<29>  |    3.145(R)|      SLOW  |    0.138(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<30>  |    2.968(R)|      SLOW  |    0.331(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<31>  |    3.374(R)|      SLOW  |    0.243(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<32>  |    3.567(R)|      SLOW  |    0.247(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<33>  |    4.344(R)|      SLOW  |   -0.691(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<34>  |    3.946(R)|      SLOW  |   -0.641(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<35>  |    4.568(R)|      SLOW  |   -0.617(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<36>  |    4.106(R)|      SLOW  |   -0.790(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<37>  |    4.247(R)|      SLOW  |   -0.676(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<38>  |    4.111(R)|      SLOW  |   -0.459(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<39>  |    4.530(R)|      SLOW  |   -0.548(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<40>  |    4.331(R)|      SLOW  |   -0.763(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<41>  |    3.257(R)|      SLOW  |   -0.335(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<42>  |    4.780(R)|      SLOW  |   -0.156(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<43>  |    3.220(R)|      SLOW  |   -0.196(R)|      SLOW  |clk125_BUFGP      |   0.000|
+coarse_time<44>  |    5.285(R)|      SLOW  |   -0.322(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<45>  |    3.506(R)|      SLOW  |   -0.619(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<46>  |    4.465(R)|      SLOW  |   -0.630(R)|      FAST  |clk125_BUFGP      |   0.000|
+coarse_time<47>  |    3.140(R)|      SLOW  |   -0.462(R)|      SLOW  |clk125_BUFGP      |   0.000|
+reset            |   11.465(R)|      SLOW  |    0.359(R)|      SLOW  |clk125_BUFGP      |   0.000|
+-----------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock clk250_0
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+HIT<0>      |    1.039(R)|      SLOW  |    0.229(R)|      SLOW  |clk250_0_BUFGP    |   0.000|
+HIT<1>      |    3.296(R)|      SLOW  |   -1.251(R)|      FAST  |clk250_0_BUFGP    |   0.000|
+HIT<2>      |    3.263(R)|      SLOW  |   -1.302(R)|      FAST  |clk250_0_BUFGP    |   0.000|
+HIT<3>      |    1.156(R)|      SLOW  |    0.256(R)|      SLOW  |clk250_0_BUFGP    |   0.000|
+HIT<4>      |    1.834(R)|      SLOW  |   -0.386(R)|      SLOW  |clk250_0_BUFGP    |   0.000|
+HIT<5>      |    0.697(R)|      SLOW  |    0.694(R)|      SLOW  |clk250_0_BUFGP    |   0.000|
+HIT<6>      |    1.036(R)|      SLOW  |    0.373(R)|      SLOW  |clk250_0_BUFGP    |   0.000|
+HIT<7>      |    2.152(R)|      SLOW  |   -0.659(R)|      FAST  |clk250_0_BUFGP    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock clk250_90
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+HIT<0>      |    0.881(R)|      SLOW  |    0.388(R)|      SLOW  |clk250_90_BUFGP   |   0.000|
+HIT<1>      |    2.835(R)|      SLOW  |   -0.974(R)|      FAST  |clk250_90_BUFGP   |   0.000|
+HIT<2>      |    3.078(R)|      SLOW  |   -1.203(R)|      FAST  |clk250_90_BUFGP   |   0.000|
+HIT<3>      |    0.712(R)|      SLOW  |    0.536(R)|      SLOW  |clk250_90_BUFGP   |   0.000|
+HIT<4>      |    1.548(R)|      SLOW  |   -0.240(R)|      FAST  |clk250_90_BUFGP   |   0.000|
+HIT<5>      |    1.072(R)|      SLOW  |    0.198(R)|      SLOW  |clk250_90_BUFGP   |   0.000|
+HIT<6>      |    1.687(R)|      SLOW  |   -0.321(R)|      FAST  |clk250_90_BUFGP   |   0.000|
+HIT<7>      |    2.141(R)|      SLOW  |   -0.650(R)|      FAST  |clk250_90_BUFGP   |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock clk250_180
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+HIT<0>      |    1.075(R)|      SLOW  |    0.193(R)|      SLOW  |clk250_180_BUFGP  |   0.000|
+HIT<1>      |    3.135(R)|      SLOW  |   -1.161(R)|      FAST  |clk250_180_BUFGP  |   0.000|
+HIT<2>      |    2.901(R)|      SLOW  |   -1.110(R)|      FAST  |clk250_180_BUFGP  |   0.000|
+HIT<3>      |    0.930(R)|      SLOW  |    0.330(R)|      SLOW  |clk250_180_BUFGP  |   0.000|
+HIT<4>      |    2.008(R)|      SLOW  |   -0.506(R)|      FAST  |clk250_180_BUFGP  |   0.000|
+HIT<5>      |    1.264(R)|      SLOW  |    0.016(R)|      SLOW  |clk250_180_BUFGP  |   0.000|
+HIT<6>      |    1.513(R)|      SLOW  |   -0.082(R)|      SLOW  |clk250_180_BUFGP  |   0.000|
+HIT<7>      |    1.900(R)|      SLOW  |   -0.510(R)|      FAST  |clk250_180_BUFGP  |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock clk250_270
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+HIT<0>      |    1.637(R)|      SLOW  |   -0.296(R)|      FAST  |clk250_270_BUFGP  |   0.000|
+HIT<1>      |    3.288(R)|      SLOW  |   -1.250(R)|      FAST  |clk250_270_BUFGP  |   0.000|
+HIT<2>      |    2.447(R)|      SLOW  |   -0.858(R)|      FAST  |clk250_270_BUFGP  |   0.000|
+HIT<3>      |    1.966(R)|      SLOW  |   -0.520(R)|      SLOW  |clk250_270_BUFGP  |   0.000|
+HIT<4>      |    1.350(R)|      SLOW  |   -0.067(R)|      SLOW  |clk250_270_BUFGP  |   0.000|
+HIT<5>      |    1.690(R)|      SLOW  |   -0.378(R)|      FAST  |clk250_270_BUFGP  |   0.000|
+HIT<6>      |    1.716(R)|      SLOW  |   -0.336(R)|      FAST  |clk250_270_BUFGP  |   0.000|
+HIT<7>      |    1.911(R)|      SLOW  |   -0.519(R)|      FAST  |clk250_270_BUFGP  |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock clkm
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+reset       |   11.663(R)|      SLOW  |   -0.453(R)|      SLOW  |clkm_BUFGP        |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk125 to Pad
+-----------------+-----------------+------------+-----------------+------------+------------------+--------+
+                 |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination      |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+-----------------+-----------------+------------+-----------------+------------+------------------+--------+
+M_FULL_DATA<0>   |         8.815(R)|      SLOW  |         3.542(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<1>   |         8.744(R)|      SLOW  |         3.505(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<2>   |         8.600(R)|      SLOW  |         3.418(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<3>   |         8.683(R)|      SLOW  |         3.460(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<4>   |         8.859(R)|      SLOW  |         3.550(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<5>   |         8.729(R)|      SLOW  |         3.489(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<6>   |         8.675(R)|      SLOW  |         3.476(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<7>   |         8.822(R)|      SLOW  |         3.583(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<8>   |         9.055(R)|      SLOW  |         3.666(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<9>   |         8.502(R)|      SLOW  |         3.343(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<10>  |         9.210(R)|      SLOW  |         3.742(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<11>  |         9.130(R)|      SLOW  |         3.690(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<12>  |         9.241(R)|      SLOW  |         3.766(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<13>  |         9.426(R)|      SLOW  |         3.968(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<14>  |         8.960(R)|      SLOW  |         3.593(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<15>  |         8.926(R)|      SLOW  |         3.619(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<16>  |         9.408(R)|      SLOW  |         3.873(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<17>  |         9.380(R)|      SLOW  |         3.865(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<18>  |         9.408(R)|      SLOW  |         3.917(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<19>  |         9.204(R)|      SLOW  |         3.789(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<20>  |         9.469(R)|      SLOW  |         3.889(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<21>  |         9.423(R)|      SLOW  |         3.891(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<22>  |         9.531(R)|      SLOW  |         3.929(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<23>  |         9.616(R)|      SLOW  |         3.973(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<24>  |         9.672(R)|      SLOW  |         4.049(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<25>  |         9.621(R)|      SLOW  |         3.968(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<26>  |         9.741(R)|      SLOW  |         4.047(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<27>  |         9.366(R)|      SLOW  |         3.843(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<28>  |         9.723(R)|      SLOW  |         4.019(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<29>  |         9.877(R)|      SLOW  |         4.118(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<30>  |        10.086(R)|      SLOW  |         4.234(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<31>  |        10.356(R)|      SLOW  |         4.366(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<32>  |         9.806(R)|      SLOW  |         4.099(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<33>  |         9.890(R)|      SLOW  |         4.142(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<34>  |         9.968(R)|      SLOW  |         4.165(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<35>  |        10.143(R)|      SLOW  |         4.269(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<36>  |        10.399(R)|      SLOW  |         4.425(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<37>  |        10.185(R)|      SLOW  |         4.279(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<38>  |        10.083(R)|      SLOW  |         4.228(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<39>  |         9.981(R)|      SLOW  |         4.176(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<40>  |        10.017(R)|      SLOW  |         4.231(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<41>  |        10.385(R)|      SLOW  |         4.385(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<42>  |         9.885(R)|      SLOW  |         4.121(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<43>  |        10.140(R)|      SLOW  |         4.256(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<44>  |         9.871(R)|      SLOW  |         4.117(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<45>  |        10.168(R)|      SLOW  |         4.276(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<46>  |         9.787(R)|      SLOW  |         4.109(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<47>  |         9.586(R)|      SLOW  |         3.984(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<48>  |         9.792(R)|      SLOW  |         4.121(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<49>  |         9.767(R)|      SLOW  |         4.070(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<50>  |         9.504(R)|      SLOW  |         3.934(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<51>  |         9.802(R)|      SLOW  |         4.115(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<52>  |         9.907(R)|      SLOW  |         4.174(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<53>  |         9.410(R)|      SLOW  |         3.916(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<54>  |         9.623(R)|      SLOW  |         3.991(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<55>  |         9.694(R)|      SLOW  |         4.026(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<56>  |         9.225(R)|      SLOW  |         3.780(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<57>  |         9.113(R)|      SLOW  |         3.725(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<58>  |         8.435(R)|      SLOW  |         3.349(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<59>  |         8.557(R)|      SLOW  |         3.407(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<60>  |         8.876(R)|      SLOW  |         3.581(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<61>  |         8.718(R)|      SLOW  |         3.495(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<62>  |         8.901(R)|      SLOW  |         3.628(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA<63>  |         8.689(R)|      SLOW  |         3.491(R)|      FAST  |clk125_BUFGP      |   0.000|
+M_FULL_DATA_VALID|         9.646(R)|      SLOW  |         3.949(R)|      FAST  |clk125_BUFGP      |   0.000|
+-----------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk125
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk125         |    7.136|         |         |         |
+clk250_0       |    2.713|         |         |         |
+clkm           |    6.083|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk250_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk250_0       |    1.621|         |         |         |
+clk250_90      |    2.964|         |         |         |
+clk250_180     |    2.606|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk250_90
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk250_90      |    1.519|         |         |         |
+clk250_270     |    2.853|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk250_180
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk250_180     |    1.577|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk250_270
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk250_270     |    1.577|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkm
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk125         |    8.079|         |         |         |
+clkm           |    6.286|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri May 02 10:49:42 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 268 MB
+
+
+

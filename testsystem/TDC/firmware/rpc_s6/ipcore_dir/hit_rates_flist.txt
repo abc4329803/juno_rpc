@@ -1,0 +1,17 @@
+# Output products list for <hit_rates>
+_xmsgs\pn_parser.xmsgs
+core_resources.txt
+gui_latency.txt
+hit_rates.asy
+hit_rates.gise
+hit_rates.ngc
+hit_rates.sym
+hit_rates.v
+hit_rates.veo
+hit_rates.xco
+hit_rates.xise
+hit_rates\doc\c_counter_binary_v11_0_readme.txt
+hit_rates\doc\c_counter_binary_v11_0_vinfo.html
+hit_rates\doc\ds215_counter.pdf
+hit_rates_flist.txt
+hit_rates_xmdf.tcl

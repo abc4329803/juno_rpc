@@ -1,0 +1,228 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    09:59:46 04/18/2014 
+// Design Name: 
+// Module Name:    reg_config 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+/////////////////////////////////////	  
+
+//////////////////////////////////////////////////////////////////////////////////
+module reg_config#(
+  parameter CHIPSCOPE_USED	= 0)
+  (
+	// system
+	input 			clk,
+	input 			rst,
+	// sitcp udp 
+	input           RBCP_ACT,
+	input   [31:0]  RBCP_ADDR,
+	input           RBCP_WE,
+	input   [7:0]   RBCP_WD,
+	input           RBCP_RE,
+	output  [7:0]   RBCP_RD,
+	output          RBCP_ACK,
+	
+	// config fifo
+	output [31:0] cfg_32_addr2gcu,
+	output [31:0] cfg_32_data2gcu,
+	output cfg_32_valid2gcu,
+	input	[31:0] cfg_32_data2PC,
+	input [31:0] cfg_32_addr2PC,
+	input cfg_32_valid2PC
+    );
+//////////////////////////
+// rx
+
+reg [3:0] cfg_next_state;
+reg [3:0] cfg_current_state;
+
+reg	[31:0] cfg_addr,cfg_rdaddr;
+reg [31:0] cfg_wrdata,cfg_rddata;
+reg cfg_wrvalid,cfg_rdvalid;
+
+reg udp_ack,udp_wren,udp_rden;
+reg [7:0] udp_rd_data,udp_wr_data;
+reg	[31:0] udp_addr;
+reg [31:0] watchdog_cnt;
+always @ (posedge clk) begin
+	if(cfg_current_state == IDLE)
+		watchdog_cnt <= 32'h0;
+	else
+		watchdog_cnt <= watchdog_cnt + 1'b1;
+end
+
+always@ (posedge clk) begin
+	cfg_rdvalid 		<= cfg_32_valid2PC;
+	if(cfg_32_valid2PC) begin
+  	cfg_rddata      <= cfg_32_data2PC;
+  	cfg_rdaddr      <= cfg_32_addr2PC;
+  end 
+end
+
+always@ (posedge clk) begin
+	udp_addr 				<= RBCP_ADDR;
+	udp_wr_data			<= RBCP_WD;
+	udp_wren				<= RBCP_WE&RBCP_ACT;
+	udp_rden				<= RBCP_RE&RBCP_ACT;
+end
+
+localparam 
+IDLE = 0, 
+WRADDR = 1, 
+WRDATA_1 = 2, 
+WRDATA_2 = 3, 
+WRDONE = 4,
+RDADDR = 5, 
+RDDATA_1 = 6, 
+RDDATA_2 = 7, 
+RDDONE = 8;
+
+
+always @ (posedge clk) begin
+	if(rst || watchdog_cnt == 32'h4000_0000)
+		cfg_current_state <= IDLE;
+	else
+		cfg_current_state <= cfg_next_state;
+end
+
+always @ ( *) begin
+	if(rst)
+		cfg_next_state = IDLE;
+	else if(udp_addr[31:16] == 16'h0)begin
+	case(cfg_current_state) 
+		IDLE:if(udp_wren)
+						cfg_next_state = WRADDR;
+				else if(udp_rden)
+						cfg_next_state = RDADDR;
+				else
+						cfg_next_state = IDLE;
+		WRADDR:if(udp_wren)
+						cfg_next_state = WRDATA_1;					
+			  else
+						cfg_next_state = WRADDR;
+		WRDATA_1:if(udp_wren)	
+						cfg_next_state = WRDATA_2;									
+				else
+						cfg_next_state = WRDATA_1;	
+		WRDATA_2:if(udp_wren)
+						cfg_next_state = WRDONE;								
+				else
+						cfg_next_state = WRDATA_2;					
+		WRDONE:
+						cfg_next_state = IDLE;
+						
+		RDADDR:if(udp_rden)
+						cfg_next_state = RDDATA_1;					
+			  else
+						cfg_next_state = RDADDR;
+		RDDATA_1:if(udp_rden)
+						cfg_next_state = RDDATA_2;									
+				else
+						cfg_next_state = RDDATA_1;	
+		RDDATA_2:if(udp_rden)
+						cfg_next_state = RDDONE;								
+				else
+						cfg_next_state = RDDATA_2;					
+		RDDONE:
+						cfg_next_state = IDLE;													
+		default:
+				cfg_next_state = IDLE;
+	endcase
+end
+end
+
+always @ (posedge clk) begin
+	if(rst) begin
+		cfg_addr  <= 0;
+		cfg_wrdata <= 0;
+		cfg_wrvalid <= 0;		
+	end else 
+	case(cfg_next_state) 
+		IDLE:
+				cfg_wrvalid <= 1'b0;
+		WRADDR:if(udp_wren) begin
+				cfg_addr  <= udp_addr;
+				cfg_wrdata[31:24] <= udp_wr_data;
+				end
+		WRDATA_1:if(udp_wren)
+				cfg_wrdata[23:16] <= udp_wr_data;
+		WRDATA_2:if(udp_wren)
+				cfg_wrdata[15:8] <= udp_wr_data;	
+		WRDONE:if(udp_wren) begin
+				cfg_wrdata[7:0] <= udp_wr_data;
+				cfg_wrvalid <= 1'b1;
+			end
+				else
+					cfg_wrvalid <= 1'b0;
+			
+		RDADDR:if(udp_rden) begin
+				cfg_addr  <= udp_addr;		
+				udp_rd_data <= cfg_rddata[31:24];
+			end
+		RDDATA_1:if(udp_rden)
+				udp_rd_data <= cfg_rddata[23:16];
+		RDDATA_2:if(udp_rden)
+				udp_rd_data <= cfg_rddata[15:8];				
+		RDDONE:if(udp_rden)
+				udp_rd_data <= cfg_rddata[7:0];		
+		default: begin
+				cfg_addr  <= 0;
+				cfg_wrdata <= 0;
+				cfg_wrvalid <= 0;
+		end
+	endcase
+end
+
+always @ (posedge clk) begin
+		udp_ack <= udp_rden|udp_wren ;
+end
+assign  RBCP_ACK = udp_ack;
+assign 	RBCP_RD = udp_rd_data;
+assign cfg_32_addr2gcu = cfg_addr;
+assign cfg_32_data2gcu = cfg_wrdata;
+assign cfg_32_valid2gcu = cfg_wrvalid;
+
+
+
+generate 
+if (CHIPSCOPE_USED== 1) begin: CHIPSCOPE_INST
+ila_regcfg ila_regcfg_i (
+	.clk(clk), // input wire clk
+
+	.probe0(rst), // input wire [0:0]  probe0  
+	.probe1(cfg_next_state), // input wire [3:0]  probe1 
+	.probe2(cfg_current_state), // input wire [3:0]  probe2 
+	.probe3(cfg_addr), // input wire [31:0]  probe3 
+	.probe4(cfg_rdaddr), // input wire [31:0]  probe4 
+	.probe5(cfg_wrdata), // input wire [31:0]  probe5 
+	.probe6(cfg_rddata), // input wire [31:0]  probe6 
+	.probe7(cfg_wrvalid), // input wire [0:0]  probe7 
+	.probe8(cfg_rdvalid), // input wire [0:0]  probe8 
+	.probe9(udp_rd_data), // input wire [7:0]  probe9 
+	.probe10(udp_ack), // input wire [0:0]  probe10 
+	.probe11(RBCP_ADDR), // input wire [31:0]  probe11 
+	.probe12(RBCP_WE), // input wire [0:0]  probe12 
+	.probe13(RBCP_WD), // input wire [7:0]  probe13 
+	.probe14(RBCP_RE), // input wire [0:0]  probe14 
+	.probe15(RBCP_ACT), // input wire [0:0]  probe15
+	.probe16(cfg_32_valid2PC),
+  .probe17(cfg_32_addr2PC),
+  .probe18(cfg_32_data2PC)
+);
+end
+endgenerate
+
+
+endmodule

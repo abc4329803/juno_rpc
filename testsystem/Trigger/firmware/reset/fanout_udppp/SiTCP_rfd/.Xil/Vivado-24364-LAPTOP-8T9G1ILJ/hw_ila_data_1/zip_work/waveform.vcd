@@ -1,0 +1,27 @@
+$date
+        2022-Dec-30 12:57:18
+$end
+$version
+        Vivado v2022.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " SiTCP_rfd_top/RBCP_REG/TDC_RST_ON $end
+$var reg 2 # SiTCP_rfd_top/RBCP_REG/cnt [1:0] $end
+$var reg 1 % _TRIGGER $end
+$var reg 1 & _WINDOW $end
+$var reg 1 ' _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+b0 #
+0%
+1&
+0'
+$end
+#2048
+1%

@@ -1,0 +1,61 @@
+$date
+        2025-Sep-29 10:32:52
+$end
+$version
+        Vivado v2024.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " u_MD10_top/gmii_tx_en $end
+$var reg 8 # u_MD10_top/gmii_rxd [7:0] $end
+$var reg 8 + u_MD10_top/gmii_txd [7:0] $end
+$var reg 8 3 u_MD10_top/m_rx_axis_tdata_1 [7:0] $end
+$var reg 1 ; u_MD10_top/gmii_rx_dv $end
+$var reg 1 < u_MD10_top/gmii_rx_er $end
+$var reg 1 = u_MD10_top/gmii_tx_er $end
+$var reg 1 > u_MD10_top/<const0>_1 $end
+$var reg 1 ? u_MD10_top/<const0>_2 $end
+$var reg 1 @ u_MD10_top/<const0>_3 $end
+$var reg 1 A u_MD10_top/<const0>_4 $end
+$var reg 1 B u_MD10_top/<const0>_5 $end
+$var reg 1 C u_MD10_top/<const0>_6 $end
+$var reg 1 D u_MD10_top/<const0> $end
+$var reg 1 E u_MD10_top/rx_axis_tvalid $end
+$var reg 32 F u_MD10_top/my_ip_addr [31:0] $end
+$var reg 8 f u_MD10_top/rx_axis_tdata [7:0] $end
+$var reg 32 n u_MD10_top/m_rx_axis_tdata [31:0] $end
+$var reg 1 0" u_MD10_top/m_rx_axis_tvalid $end
+$var reg 1 1" _TRIGGER $end
+$var reg 1 2" _WINDOW $end
+$var reg 1 3" _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+b1 #
+b0 +
+b11011101 3
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+b11000000101010000000101000010100 F
+b11011101 f
+b11011101 n
+00"
+01"
+12"
+03"
+$end
+#512
+11"

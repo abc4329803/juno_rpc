@@ -1,0 +1,104 @@
+`timescale 1ns / 1ps
+/******************************************************************************
+*
+*    File Name:  manchester_decoder.v
+*      Version:  1.0
+*         Date:  Nov 14, 2014
+*        Model:  Manchester Decoder
+*       Author:  Zhang jie(zhj@ihep.ac.cn)
+*      Company:  IHEP
+*
+******************************************************************************/
+module manchester_decoder_4x(
+  input       CLK4X   ,   // 80MHz
+  input       CLK     ,   // 40MHz
+  input       RST     ,   // active high
+  input       MDI     ,   // 1 bit input, synchronised on the CLK2X.
+  output reg  LINKED  ,   // 1 bit output, active high, Acknowledged Connection.
+  output reg  DOUT        // 1 bit output, synchronised on the CLK.
+);
+
+reg       MDI_1;
+reg [7:0] mdi_r; //sync MDI to the FPGA clock using a 4-bits shift register
+always @(posedge CLK4X) begin
+  MDI_1 <= MDI;
+  if(RST) begin 
+      mdi_r <= 0;
+  end else begin 
+      mdi_r[7:0] <= {mdi_r[6:0], MDI_1};
+  end
+end
+
+// State Machine
+reg [1:0] state_reg, state_next;
+localparam
+  WAIT = 0,     // wait link active
+  SEARCH = 1,   // search the symbolic boundary
+  DATA1 = 2,    // receive data
+  DATA2 = 3;    // skip
+
+always @(posedge CLK4X)
+  if (RST) state_reg <= WAIT;
+  else state_reg <= state_next;
+
+always @(*) begin
+  state_next = WAIT;
+  LINKED = 0;
+  case(state_reg)
+    WAIT: begin
+      if(mdi_r[7:4]==4'b1100 || mdi_r[7:4]==4'b0011) state_next = SEARCH; // detect "10" and "10"
+      else state_next = WAIT;
+/*       if(sync_sr == 8'hD6)
+          state_next = DATA1;
+      else
+          state_next = WAIT; */
+    end
+    SEARCH: begin
+      if(mdi_r[7:4]==4'b0000 || mdi_r[7:4]==4'b1111) state_next = DATA1; // detect "11" and "00"
+      else state_next = SEARCH;
+    end
+    DATA1: begin
+      if(mdi_r[7:2]==6'b000000 || mdi_r[7:2]==6'b111111) state_next = WAIT; // if link failure
+      else begin
+        state_next = DATA2;
+        LINKED = 1;
+      end
+    end
+    DATA2: begin
+      if(mdi_r[7:2]==6'b000000 || mdi_r[7:2]==6'b111111) state_next = WAIT; // if link failure
+      else begin
+        state_next = DATA1;
+        LINKED = 1;
+      end
+    end
+  endcase
+end
+
+reg nrz;
+always @(posedge CLK4X) begin
+  if(RST) nrz <= 0;
+  else begin
+    if(state_reg == DATA1) begin
+      case(mdi_r[7:4])
+        4'b0011: nrz <= 1'b1; // IEEE 802.3 (Ethernet) standards
+        4'b1100: nrz <= 1'b0;
+        default: nrz <= nrz;
+      endcase
+    end
+  end
+end
+
+always @(posedge CLK) begin
+  if(RST) DOUT <= 0;
+  else DOUT <= nrz;
+end
+
+endmodule
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top.ucf -p
+xc6slx9-ftg256-2 top.ngc top.ngd
+
+Reading NGO file "C:/Users/Public/rpc_s6/top.ngc" ...
+Loading design module "ipcore_dir/Coarse_Time_Counter.ngc"...
+Loading design module "ipcore_dir/ALL_CHANNEL_DATA.ngc"...
+Loading design module "ipcore_dir/Data_FIFO.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "top.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TDC_datapack_clk125M =
+   PERIOD "TDC_datapack/clk125M" 8 ns HIGH 50%;> [top.ucf(122)]: Unable to find
+   an active 'TNM' or 'TimeGrp' constraint named 'TDC_datapack/clk125M'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG13 = FROM
+   "TDC_datapack/clk125M" TO "TDC_datapack/clk250_0" TIG;> [top.ucf(149)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk125M'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG14 = FROM
+   "TDC_datapack/clk125M" TO "TDC_datapack/clk250_90" TIG;> [top.ucf(150)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk125M'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG15 = FROM
+   "TDC_datapack/clk125M" TO "TDC_datapack/clk250_180" TIG;> [top.ucf(151)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk125M'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG16 = FROM
+   "TDC_datapack/clk125M" TO "TDC_datapack/clk250_270" TIG;> [top.ucf(152)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk125M'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG17 = FROM
+   "TDC_datapack/clk250_0" TO "TDC_datapack/clk125M" TIG;> [top.ucf(153)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk125M'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG18 = FROM
+   "TDC_datapack/clk250_90" TO "TDC_datapack/clk125M" TIG;> [top.ucf(154)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk125M'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG19 = FROM
+   "TDC_datapack/clk250_180" TO "TDC_datapack/clk125M" TIG;> [top.ucf(155)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk125M'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG20 = FROM
+   "TDC_datapack/clk250_270" TO "TDC_datapack/clk125M" TIG;> [top.ucf(156)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk125M'.
+
+WARNING:ConstraintSystem - TNM : CLKIN was distributed to a DCM but new TNM
+   constraints were not derived. The requirement for derived TNM constraints is
+   that the distributed TNM is referenced by no more than a single PERIOD
+   constraint. Non-PERIOD referencers are also not allowed. This TNM is used in
+   the following user groups or specifications:
+   <TIMESPEC TS_CLKIN = PERIOD "CLKIN" 125 MHz HIGH 50 %;> [top.ucf(11)]
+   <TIMESPEC TS_TIG21 = FROM "CLKIN" TO "TDC_datapack/clk250_0" TIG;>
+   [top.ucf(159)]
+   <TIMESPEC TS_TIG22 = FROM "CLKIN" TO "TDC_datapack/clk250_90" TIG;>
+   [top.ucf(160)]
+   <TIMESPEC TS_TIG23 = FROM "CLKIN" TO "TDC_datapack/clk250_180" TIG;>
+   [top.ucf(161)]
+   <TIMESPEC TS_TIG24 = FROM "CLKIN" TO "TDC_datapack/clk250_270" TIG;>
+   [top.ucf(162)]
+   <TIMESPEC TS_TIG25 = FROM "TDC_datapack/clk250_0" TO "CLKIN" TIG;>
+   [top.ucf(163)]
+   <TIMESPEC TS_TIG26 = FROM "TDC_datapack/clk250_90" TO "CLKIN" TIG;>
+   [top.ucf(164)]
+   <TIMESPEC TS_TIG27 = FROM "TDC_datapack/clk250_180" TO "CLKIN" TIG;>
+   [top.ucf(165)]
+   <TIMESPEC TS_TIG28 = FROM "TDC_datapack/clk250_270" TO "CLKIN" TIG;>
+   [top.ucf(166)]
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  10
+
+Total memory usage is 200224 kilobytes
+
+Writing NGD file "top.ngd" ...
+Total REAL time to NGDBUILD completion:  9 sec
+Total CPU time to NGDBUILD completion:   9 sec
+
+Writing NGDBUILD log file "top.bld"...

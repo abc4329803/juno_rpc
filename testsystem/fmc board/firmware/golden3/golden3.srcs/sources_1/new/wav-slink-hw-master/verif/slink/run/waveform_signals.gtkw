@@ -1,0 +1,94 @@
+[*]
+[*] GTKWave Analyzer v3.3.105 (w)1999-2020 BSI
+[*] Tue Aug 18 17:33:23 2020
+[*]
+[dumpfile] "/prj/projects/S-Link/verif/slink/run/dump.lx2"
+[dumpfile_mtime] "Tue Aug 18 17:28:43 2020"
+[dumpfile_size] 8040694
+[savefile] "/prj/projects/S-Link/verif/slink/run/waveform_signals.gtkw"
+[timestart] 2407000000
+[size] 2015 1194
+[pos] -1 -1
+*-29.167797 3838100000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_top.
+[treeopen] tb_top.u_slink_SLAVE.
+[sst_width] 363
+[signals_width] 660
+[sst_expanded] 1
+[sst_vpaned_height] 329
+@200
+-[MASTER] - Application Layer
+@28
+tb_top.u_slink_MASTER.link_clk[0]
+tb_top.u_slink_MASTER.tx_sop[0]
+@22
+tb_top.u_slink_MASTER.tx_data_id[7:0]
+tb_top.u_slink_MASTER.tx_word_count[15:0]
+tb_top.u_slink_MASTER.tx_app_data[127:0]
+@28
+tb_top.u_slink_MASTER.tx_advance[0]
+@820
+[color] 7
+tb_top.u_slink_MASTER.u_slink_ll_tx.state_name[320:1]
+@200
+-
+@28
+tb_top.u_slink_MASTER.rx_sop[0]
+@22
+tb_top.u_slink_MASTER.rx_data_id[7:0]
+tb_top.u_slink_MASTER.rx_word_count[15:0]
+tb_top.u_slink_MASTER.rx_app_data[127:0]
+@28
+tb_top.u_slink_MASTER.rx_valid[0]
+@820
+[color] 7
+tb_top.u_slink_MASTER.u_slink_ll_rx.state_name[320:1]
+@200
+-
+-[MASTER] - LTSSM 
+@820
+[color] 7
+tb_top.u_slink_MASTER.u_slink_ltssm.state_name[320:1]
+@200
+-===================================
+@28
+tb_top.u_slink_MASTER.slink_gpio_reset_n[0]
+tb_top.u_slink_MASTER.slink_gpio_wake_n[0]
+@200
+-===================================
+-[SLAVE] - Application Layer
+@28
+tb_top.u_slink_SLAVE.link_clk[0]
+tb_top.u_slink_SLAVE.tx_sop[0]
+@22
+tb_top.u_slink_SLAVE.tx_data_id[7:0]
+tb_top.u_slink_SLAVE.tx_word_count[15:0]
+tb_top.u_slink_SLAVE.tx_app_data[127:0]
+@28
+tb_top.u_slink_SLAVE.tx_advance[0]
+@820
+[color] 7
+tb_top.u_slink_SLAVE.u_slink_ll_tx.state_name[320:1]
+@200
+-
+@28
+tb_top.u_slink_SLAVE.rx_sop[0]
+@22
+tb_top.u_slink_SLAVE.rx_data_id[7:0]
+tb_top.u_slink_SLAVE.rx_word_count[15:0]
+tb_top.u_slink_SLAVE.rx_app_data[127:0]
+@28
+tb_top.u_slink_SLAVE.rx_valid[0]
+@820
+[color] 7
+tb_top.u_slink_SLAVE.u_slink_ll_rx.state_name[320:1]
+@200
+-
+-[SLAVE] - LTSSM
+@820
+[color] 7
+tb_top.u_slink_SLAVE.u_slink_ltssm.state_name[320:1]
+@200
+------------------------------------
+[pattern_trace] 1
+[pattern_trace] 0

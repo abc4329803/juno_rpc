@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_TDC_datapack_clk125M = PERIOD &quot;TDC_datapack/clk125M&quot; 8 ns HIGH 50%;&gt; [top.ucf(122)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos; or &apos;TimeGrp&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">TDC_datapack/clk125M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_TIG13 = FROM &quot;TDC_datapack/clk125M&quot; TO &quot;TDC_datapack/clk250_0&quot; TIG;&gt; [top.ucf(149)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">TDC_datapack/clk125M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_TIG14 = FROM &quot;TDC_datapack/clk125M&quot; TO &quot;TDC_datapack/clk250_90&quot; TIG;&gt; [top.ucf(150)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">TDC_datapack/clk125M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_TIG15 = FROM &quot;TDC_datapack/clk125M&quot; TO &quot;TDC_datapack/clk250_180&quot; TIG;&gt; [top.ucf(151)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">TDC_datapack/clk125M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_TIG16 = FROM &quot;TDC_datapack/clk125M&quot; TO &quot;TDC_datapack/clk250_270&quot; TIG;&gt; [top.ucf(152)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">TDC_datapack/clk125M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_TIG17 = FROM &quot;TDC_datapack/clk250_0&quot; TO &quot;TDC_datapack/clk125M&quot; TIG;&gt; [top.ucf(153)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">TDC_datapack/clk125M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_TIG18 = FROM &quot;TDC_datapack/clk250_90&quot; TO &quot;TDC_datapack/clk125M&quot; TIG;&gt; [top.ucf(154)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">TDC_datapack/clk125M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_TIG19 = FROM &quot;TDC_datapack/clk250_180&quot; TO &quot;TDC_datapack/clk125M&quot; TIG;&gt; [top.ucf(155)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">TDC_datapack/clk125M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_TIG20 = FROM &quot;TDC_datapack/clk250_270&quot; TO &quot;TDC_datapack/clk125M&quot; TIG;&gt; [top.ucf(156)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">TDC_datapack/clk125M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >TNM : CLKIN was distributed to a DCM but new TNM constraints were not derived. The requirement for derived TNM constraints is that the distributed TNM is referenced by no more than a single PERIOD constraint. Non-PERIOD referencers are also not allowed. This TNM is used in the following user groups or specifications:
+&lt;TIMESPEC TS_CLKIN = PERIOD &quot;CLKIN&quot; 125 MHz HIGH 50 %;&gt; [top.ucf(11)]
+&lt;TIMESPEC TS_TIG21 = FROM &quot;CLKIN&quot; TO &quot;TDC_datapack/clk250_0&quot; TIG;&gt; [top.ucf(159)]
+&lt;TIMESPEC TS_TIG22 = FROM &quot;CLKIN&quot; TO &quot;TDC_datapack/clk250_90&quot; TIG;&gt; [top.ucf(160)]
+&lt;TIMESPEC TS_TIG23 = FROM &quot;CLKIN&quot; TO &quot;TDC_datapack/clk250_180&quot; TIG;&gt; [top.ucf(161)]
+&lt;TIMESPEC TS_TIG24 = FROM &quot;CLKIN&quot; TO &quot;TDC_datapack/clk250_270&quot; TIG;&gt; [top.ucf(162)]
+&lt;TIMESPEC TS_TIG25 = FROM &quot;TDC_datapack/clk250_0&quot; TO &quot;CLKIN&quot; TIG;&gt; [top.ucf(163)]
+&lt;TIMESPEC TS_TIG26 = FROM &quot;TDC_datapack/clk250_90&quot; TO &quot;CLKIN&quot; TIG;&gt; [top.ucf(164)]
+&lt;TIMESPEC TS_TIG27 = FROM &quot;TDC_datapack/clk250_180&quot; TO &quot;CLKIN&quot; TIG;&gt; [top.ucf(165)]
+&lt;TIMESPEC TS_TIG28 = FROM &quot;TDC_datapack/clk250_270&quot; TO &quot;CLKIN&quot; TIG;&gt; [top.ucf(166)]
+</msg>
+
+</messages>
+

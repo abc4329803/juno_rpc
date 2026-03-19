@@ -1,0 +1,8 @@
+verilog isim_temp "ipcore_dir/Coarse_Time_Counter.v"
+verilog isim_temp "src/Pulser.v"
+verilog isim_temp "src/TIMER.v"
+verilog isim_temp "src/Phase_TDC.v"
+verilog isim_temp "src/manchester/manchester_encoder.v"
+verilog isim_temp "src/TDC_datapack.v"
+verilog isim_temp "tb.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

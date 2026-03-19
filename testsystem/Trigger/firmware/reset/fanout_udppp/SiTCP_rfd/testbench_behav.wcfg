@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="466.471 ns"></ZoomStartTime>
+      <ZoomEndTime time="506.870 ns"></ZoomEndTime>
+      <Cursor1Time time="490.017 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="169"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/testbench/Data_syn" type="array">
+      <obj_property name="ElementShortName">Data_syn[447:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_syn[447:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/Pretreatment/Data_32" type="array">
+      <obj_property name="ElementShortName">Data_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/Pretreatment/one_count_32bit" type="array">
+      <obj_property name="ElementShortName">one_count_32bit[4:0]</obj_property>
+      <obj_property name="ObjectShortName">one_count_32bit[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/Pretreatment/no_bubble" type="array">
+      <obj_property name="ElementShortName">no_bubble[2:0]</obj_property>
+      <obj_property name="ObjectShortName">no_bubble[2:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/Pretreatment/Data_pretreat" type="array">
+      <obj_property name="ElementShortName">Data_pretreat[447:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_pretreat[447:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/Pretreatment/pretreat_valid" type="logic">
+      <obj_property name="ElementShortName">pretreat_valid</obj_property>
+      <obj_property name="ObjectShortName">pretreat_valid</obj_property>
+   </wvobject>
+</wave_config>

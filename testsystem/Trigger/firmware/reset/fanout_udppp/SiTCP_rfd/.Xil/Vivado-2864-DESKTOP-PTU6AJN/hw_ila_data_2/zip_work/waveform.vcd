@@ -1,0 +1,25 @@
+$date
+        2023-Oct-11 16:27:36
+$end
+$version
+        Vivado v2022.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 32 " cnt0 [31:0] $end
+$var reg 1 B _TRIGGER $end
+$var reg 1 C _WINDOW $end
+$var reg 1 D _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+0B
+1C
+0D
+$end
+#512
+1B
