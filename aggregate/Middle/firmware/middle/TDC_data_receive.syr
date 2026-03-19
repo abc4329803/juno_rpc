@@ -1,0 +1,756 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: TDC_data_receive.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TDC_data_receive.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TDC_data_receive"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : TDC_data_receive
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/VM_FILE/middle/src/manchester/manchester_decoder.v" into library work
+Parsing module <manchester_decoder>.
+Analyzing Verilog file "/home/ise/VM_FILE/middle/src/TDC _data_receive.v" into library work
+Parsing module <TDC_data_receive>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TDC_data_receive>.
+
+Elaborating module <manchester_decoder>.
+WARNING:HDLCompiler:1127 - "/home/ise/VM_FILE/middle/src/manchester/manchester_decoder.v" Line 94: Assignment to LINKED1 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "/home/ise/VM_FILE/middle/src/TDC _data_receive.v" Line 122: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:1127 - "/home/ise/VM_FILE/middle/src/TDC _data_receive.v" Line 115: Assignment to alarm ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TDC_data_receive>.
+    Related source file is "/home/ise/VM_FILE/middle/src/TDC _data_receive.v".
+        DATA_WIDTH = 88
+WARNING:Xst:647 - Input <SW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/ise/VM_FILE/middle/src/TDC _data_receive.v" line 101: Output port <LINKED> of the instance <tdc_data_dec> is unconnected or connected to loadless signal.
+    Register <TDC_decode_data_valid_rr> equivalent to <reset_decoder> has been removed
+    Found 1-bit register for signal <reset_decoder>.
+    Found 1-bit register for signal <state_reg>.
+    Found 1-bit register for signal <TDC_decode_data_valid>.
+    Found 89-bit register for signal <DATA_parallel>.
+    Found 1-bit register for signal <DATA_OUT<111>>.
+    Found 1-bit register for signal <DATA_OUT<110>>.
+    Found 1-bit register for signal <DATA_OUT<109>>.
+    Found 1-bit register for signal <DATA_OUT<108>>.
+    Found 1-bit register for signal <DATA_OUT<107>>.
+    Found 1-bit register for signal <DATA_OUT<106>>.
+    Found 1-bit register for signal <DATA_OUT<105>>.
+    Found 1-bit register for signal <DATA_OUT<104>>.
+    Found 1-bit register for signal <DATA_OUT<103>>.
+    Found 1-bit register for signal <DATA_OUT<102>>.
+    Found 1-bit register for signal <DATA_OUT<101>>.
+    Found 1-bit register for signal <DATA_OUT<100>>.
+    Found 1-bit register for signal <DATA_OUT<99>>.
+    Found 1-bit register for signal <DATA_OUT<98>>.
+    Found 1-bit register for signal <DATA_OUT<97>>.
+    Found 1-bit register for signal <DATA_OUT<96>>.
+    Found 1-bit register for signal <DATA_OUT<95>>.
+    Found 1-bit register for signal <DATA_OUT<94>>.
+    Found 1-bit register for signal <DATA_OUT<93>>.
+    Found 1-bit register for signal <DATA_OUT<92>>.
+    Found 1-bit register for signal <DATA_OUT<91>>.
+    Found 1-bit register for signal <DATA_OUT<90>>.
+    Found 1-bit register for signal <DATA_OUT<89>>.
+    Found 1-bit register for signal <DATA_OUT<88>>.
+    Found 1-bit register for signal <DATA_OUT<87>>.
+    Found 1-bit register for signal <DATA_OUT<86>>.
+    Found 1-bit register for signal <DATA_OUT<85>>.
+    Found 1-bit register for signal <DATA_OUT<84>>.
+    Found 1-bit register for signal <DATA_OUT<83>>.
+    Found 1-bit register for signal <DATA_OUT<82>>.
+    Found 1-bit register for signal <DATA_OUT<81>>.
+    Found 1-bit register for signal <DATA_OUT<80>>.
+    Found 1-bit register for signal <DATA_OUT<79>>.
+    Found 1-bit register for signal <DATA_OUT<78>>.
+    Found 1-bit register for signal <DATA_OUT<77>>.
+    Found 1-bit register for signal <DATA_OUT<76>>.
+    Found 1-bit register for signal <DATA_OUT<75>>.
+    Found 1-bit register for signal <DATA_OUT<74>>.
+    Found 1-bit register for signal <DATA_OUT<73>>.
+    Found 1-bit register for signal <DATA_OUT<72>>.
+    Found 1-bit register for signal <DATA_OUT<71>>.
+    Found 1-bit register for signal <DATA_OUT<70>>.
+    Found 1-bit register for signal <DATA_OUT<69>>.
+    Found 1-bit register for signal <DATA_OUT<68>>.
+    Found 1-bit register for signal <DATA_OUT<67>>.
+    Found 1-bit register for signal <DATA_OUT<66>>.
+    Found 1-bit register for signal <DATA_OUT<65>>.
+    Found 1-bit register for signal <DATA_OUT<64>>.
+    Found 1-bit register for signal <DATA_OUT<63>>.
+    Found 1-bit register for signal <DATA_OUT<62>>.
+    Found 1-bit register for signal <DATA_OUT<61>>.
+    Found 1-bit register for signal <DATA_OUT<60>>.
+    Found 1-bit register for signal <DATA_OUT<59>>.
+    Found 1-bit register for signal <DATA_OUT<58>>.
+    Found 1-bit register for signal <DATA_OUT<57>>.
+    Found 1-bit register for signal <DATA_OUT<56>>.
+    Found 1-bit register for signal <DATA_OUT<55>>.
+    Found 1-bit register for signal <DATA_OUT<54>>.
+    Found 1-bit register for signal <DATA_OUT<53>>.
+    Found 1-bit register for signal <DATA_OUT<52>>.
+    Found 1-bit register for signal <DATA_OUT<51>>.
+    Found 1-bit register for signal <DATA_OUT<50>>.
+    Found 1-bit register for signal <DATA_OUT<49>>.
+    Found 1-bit register for signal <DATA_OUT<48>>.
+    Found 1-bit register for signal <DATA_OUT<47>>.
+    Found 1-bit register for signal <DATA_OUT<46>>.
+    Found 1-bit register for signal <DATA_OUT<45>>.
+    Found 1-bit register for signal <DATA_OUT<44>>.
+    Found 1-bit register for signal <DATA_OUT<43>>.
+    Found 1-bit register for signal <DATA_OUT<42>>.
+    Found 1-bit register for signal <DATA_OUT<41>>.
+    Found 1-bit register for signal <DATA_OUT<40>>.
+    Found 1-bit register for signal <DATA_OUT<39>>.
+    Found 1-bit register for signal <DATA_OUT<38>>.
+    Found 1-bit register for signal <DATA_OUT<37>>.
+    Found 1-bit register for signal <DATA_OUT<36>>.
+    Found 1-bit register for signal <DATA_OUT<35>>.
+    Found 1-bit register for signal <DATA_OUT<34>>.
+    Found 1-bit register for signal <DATA_OUT<33>>.
+    Found 1-bit register for signal <DATA_OUT<32>>.
+    Found 1-bit register for signal <DATA_OUT<31>>.
+    Found 1-bit register for signal <DATA_OUT<30>>.
+    Found 1-bit register for signal <DATA_OUT<29>>.
+    Found 1-bit register for signal <DATA_OUT<28>>.
+    Found 1-bit register for signal <DATA_OUT<27>>.
+    Found 1-bit register for signal <DATA_OUT<26>>.
+    Found 1-bit register for signal <DATA_OUT<25>>.
+    Found 1-bit register for signal <DATA_OUT<24>>.
+    Found 1-bit register for signal <DATA_OUT<23>>.
+    Found 1-bit register for signal <DATA_OUT<22>>.
+    Found 1-bit register for signal <DATA_OUT<21>>.
+    Found 1-bit register for signal <DATA_OUT<20>>.
+    Found 1-bit register for signal <DATA_OUT<19>>.
+    Found 1-bit register for signal <DATA_OUT<18>>.
+    Found 1-bit register for signal <DATA_OUT<17>>.
+    Found 1-bit register for signal <DATA_OUT<16>>.
+    Found 1-bit register for signal <DATA_OUT<15>>.
+    Found 1-bit register for signal <DATA_OUT<14>>.
+    Found 1-bit register for signal <DATA_OUT<13>>.
+    Found 1-bit register for signal <DATA_OUT<12>>.
+    Found 1-bit register for signal <DATA_OUT<11>>.
+    Found 1-bit register for signal <DATA_OUT<10>>.
+    Found 1-bit register for signal <DATA_OUT<9>>.
+    Found 1-bit register for signal <DATA_OUT<8>>.
+    Found 1-bit register for signal <DATA_OUT<7>>.
+    Found 1-bit register for signal <DATA_OUT<6>>.
+    Found 1-bit register for signal <DATA_OUT<5>>.
+    Found 1-bit register for signal <DATA_OUT<4>>.
+    Found 1-bit register for signal <DATA_OUT<3>>.
+    Found 1-bit register for signal <DATA_OUT<2>>.
+    Found 1-bit register for signal <DATA_OUT<1>>.
+    Found 1-bit register for signal <DATA_OUT<0>>.
+    Found 1-bit register for signal <DATA_OUT_VALID>.
+    Found 7-bit register for signal <count>.
+    Found 7-bit adder for signal <count[6]_GND_1_o_add_1_OUT> created at line 45.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 212 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <TDC_data_receive> synthesized.
+
+Synthesizing Unit <manchester_decoder>.
+    Related source file is "/home/ise/VM_FILE/middle/src/manchester/manchester_decoder.v".
+        oversampling_factor = 8
+        threshold = 3
+    Set property "KEEP = TRUE" for signal <sync_data>.
+    Set property "KEEP = TRUE" for signal <sync_data1>.
+    Set property "KEEP = TRUE" for signal <state_reg1>.
+    Set property "KEEP = TRUE" for signal <state_next1>.
+    Set property "KEEP = TRUE" for signal <MDI_2>.
+    Set property "KEEP = TRUE" for signal <sync_shift>.
+    Set property "KEEP = TRUE" for signal <sync_shift1>.
+    Found 4-bit register for signal <mdi_r>.
+    Found 1-bit register for signal <MDI_2>.
+    Found 4-bit register for signal <sync_data>.
+    Found 1-bit register for signal <sync_shift>.
+    Found 4-bit register for signal <sample_cnt>.
+    Found 4-bit register for signal <data_shift>.
+    Found 2-bit register for signal <state_reg1>.
+    Found 2-bit register for signal <state_reg>.
+    Found 1-bit register for signal <nrz>.
+    Found 1-bit register for signal <DOUT>.
+    Found 1-bit register for signal <MDI_1>.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK2X (rising_edge)                            |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <sample_cnt[3]_GND_2_o_add_8_OUT> created at line 76.
+    Found 2-bit 3-to-1 multiplexer for signal <state_next1> created at line 97.
+    Found 4-bit comparator lessequal for signal <n0010> created at line 77
+    Found 4-bit comparator lessequal for signal <n0014> created at line 81
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal state_next1 may hinder XST clustering optimizations.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <manchester_decoder> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 128
+ 1-bit register                                        : 121
+ 2-bit register                                        : 1
+ 4-bit register                                        : 4
+ 7-bit register                                        : 1
+ 89-bit register                                       : 1
+# Comparators                                          : 2
+ 4-bit comparator lessequal                            : 2
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 2
+ 2-bit 3-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+WARNING:Xst:638 - in unit manchester_decoder Conflict on KEEP property on signal sync_data<3> and sync_data1<3> sync_data1<3> signal will be lost.
+WARNING:Xst:638 - in unit manchester_decoder Conflict on KEEP property on signal sync_data<2> and sync_data1<2> sync_data1<2> signal will be lost.
+WARNING:Xst:638 - in unit manchester_decoder Conflict on KEEP property on signal sync_data<1> and sync_data1<1> sync_data1<1> signal will be lost.
+WARNING:Xst:638 - in unit manchester_decoder Conflict on KEEP property on signal sync_data<0> and sync_data1<0> sync_data1<0> signal will be lost.
+WARNING:Xst:638 - in unit manchester_decoder Conflict on KEEP property on signal sync_shift and sync_shift1 sync_shift1 signal will be lost.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <DATA_OUT_88> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_89> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_90> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_91> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_92> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_93> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_94> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_95> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_96> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_97> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_98> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_100> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_101> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_99> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_102> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_103> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_104> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_105> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_106> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_107> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_108> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_109> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_110> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_111> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <DATA_parallel_0> of sequential type is unconnected in block <TDC_data_receive>.
+
+Synthesizing (advanced) Unit <TDC_data_receive>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <TDC_data_receive> synthesized (advanced).
+
+Synthesizing (advanced) Unit <manchester_decoder>.
+The following registers are absorbed into counter <sample_cnt>: 1 register on signal <sample_cnt>.
+Unit <manchester_decoder> synthesized (advanced).
+WARNING:Xst:2677 - Node <DATA_parallel_0> of sequential type is unconnected in block <TDC_data_receive>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 4-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 223
+ Flip-Flops                                            : 223
+# Comparators                                          : 2
+ 4-bit comparator lessequal                            : 2
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 1
+ 2-bit 3-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <DATA_OUT_88> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_89> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_90> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_91> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_92> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_93> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_94> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_95> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_96> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_97> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_98> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_99> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_101> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_102> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_100> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_103> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_104> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_105> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_106> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_107> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_108> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_109> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_110> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_OUT_111> (without init value) has a constant value of 0 in block <TDC_data_receive>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <tdc_data_dec/FSM_0> on signal <state_reg[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+
+Optimizing unit <TDC_data_receive> ...
+
+Optimizing unit <manchester_decoder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TDC_data_receive, actual ratio is 5.
+FlipFlop TDC_decode_data_valid has been replicated 1 time(s)
+FlipFlop reset_decoder has been replicated 1 time(s)
+FlipFlop state_reg_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 215
+ Flip-Flops                                            : 215
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TDC_data_receive.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 146
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 7
+#      LUT3                        : 92
+#      LUT4                        : 6
+#      LUT5                        : 9
+#      LUT6                        : 27
+#      MUXF7                       : 3
+# FlipFlops/Latches                : 215
+#      FD                          : 21
+#      FDR                         : 18
+#      FDRE                        : 176
+# Clock Buffers                    : 3
+#      BUFGP                       : 3
+# IO Buffers                       : 115
+#      IBUF                        : 2
+#      OBUF                        : 113
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             215  out of  11440     1%  
+ Number of Slice LUTs:                  142  out of   5720     2%  
+    Number used as Logic:               142  out of   5720     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    242
+   Number with an unused Flip Flop:      27  out of    242    11%  
+   Number with an unused LUT:           100  out of    242    41%  
+   Number of fully used LUT-FF pairs:   115  out of    242    47%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                         122
+ Number of bonded IOBs:                 118  out of    186    63%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 191   |
+CLK2X                              | BUFGP                  | 8     |
+CLK8X                              | BUFGP                  | 16    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.118ns (Maximum Frequency: 242.836MHz)
+   Minimum input arrival time before clock: 5.262ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.878ns (frequency: 257.873MHz)
+  Total number of paths / destination ports: 620 / 367
+-------------------------------------------------------------------------
+Delay:               3.878ns (Levels of Logic = 1)
+  Source:            reset_decoder_1 (FF)
+  Destination:       DATA_OUT_87 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: reset_decoder_1 to DATA_OUT_87
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  reset_decoder_1 (reset_decoder_1)
+     INV:I->O             88   0.255   2.115  TDC_decode_data_valid_TDC_decode_data_valid_rr_AND_6_o1_cepot_INV_0 (TDC_decode_data_valid_TDC_decode_data_valid_rr_AND_6_o1_cepot)
+     FDRE:CE                   0.302          DATA_OUT_87
+    ----------------------------------------
+    Total                      3.878ns (1.082ns logic, 2.796ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK2X'
+  Clock period: 2.049ns (frequency: 488.043MHz)
+  Total number of paths / destination ports: 17 / 7
+-------------------------------------------------------------------------
+Delay:               2.049ns (Levels of Logic = 1)
+  Source:            tdc_data_dec/state_reg_FSM_FFd1 (FF)
+  Destination:       tdc_data_dec/state_reg_FSM_FFd1 (FF)
+  Source Clock:      CLK2X rising
+  Destination Clock: CLK2X rising
+
+  Data Path: tdc_data_dec/state_reg_FSM_FFd1 to tdc_data_dec/state_reg_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   1.196  tdc_data_dec/state_reg_FSM_FFd1 (tdc_data_dec/state_reg_FSM_FFd1)
+     LUT5:I0->O            1   0.254   0.000  tdc_data_dec/state_reg_FSM_FFd1-In1 (tdc_data_dec/state_reg_FSM_FFd1-In)
+     FDR:D                     0.074          tdc_data_dec/state_reg_FSM_FFd1
+    ----------------------------------------
+    Total                      2.049ns (0.853ns logic, 1.196ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK8X'
+  Clock period: 4.118ns (frequency: 242.836MHz)
+  Total number of paths / destination ports: 160 / 15
+-------------------------------------------------------------------------
+Delay:               4.118ns (Levels of Logic = 3)
+  Source:            tdc_data_dec/sample_cnt_1 (FF)
+  Destination:       tdc_data_dec/sample_cnt_0 (FF)
+  Source Clock:      CLK8X rising
+  Destination Clock: CLK8X rising
+
+  Data Path: tdc_data_dec/sample_cnt_1 to tdc_data_dec/sample_cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.525   1.155  tdc_data_dec/sample_cnt_1 (tdc_data_dec/sample_cnt_1)
+     LUT2:I1->O            6   0.254   0.876  tdc_data_dec/sync_data[2]_GND_2_o_AND_1_o_SW0 (N6)
+     LUT6:I5->O            2   0.254   0.726  tdc_data_dec/Mcount_sample_cnt_val1 (tdc_data_dec/Mcount_sample_cnt_val)
+     LUT6:I5->O            1   0.254   0.000  tdc_data_dec/sample_cnt_1_rstpot (tdc_data_dec/sample_cnt_1_rstpot)
+     FD:D                      0.074          tdc_data_dec/sample_cnt_1
+    ----------------------------------------
+    Total                      4.118ns (1.361ns logic, 2.757ns route)
+                                       (33.1% logic, 66.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 181 / 181
+-------------------------------------------------------------------------
+Offset:              5.262ns (Levels of Logic = 3)
+  Source:            RESET (PAD)
+  Destination:       DATA_OUT_VALID (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RESET to DATA_OUT_VALID
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           179   1.328   2.670  RESET_IBUF (RESET_IBUF)
+     LUT4:I0->O            1   0.254   0.682  TDC_decode_data[7]_TDC_decode_data[71]_AND_7_o3_SW0 (N14)
+     LUT6:I5->O            1   0.254   0.000  DATA_OUT_VALID_rstpot (DATA_OUT_VALID_rstpot)
+     FD:D                      0.074          DATA_OUT_VALID
+    ----------------------------------------
+    Total                      5.262ns (1.910ns logic, 3.352ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK8X'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.127ns (Levels of Logic = 1)
+  Source:            DATA_IN (PAD)
+  Destination:       tdc_data_dec/MDI_2 (FF)
+  Destination Clock: CLK8X rising
+
+  Data Path: DATA_IN to tdc_data_dec/MDI_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   0.725  DATA_IN_IBUF (DATA_IN_IBUF)
+     FD:D                      0.074          tdc_data_dec/MDI_2
+    ----------------------------------------
+    Total                      2.127ns (1.402ns logic, 0.725ns route)
+                                       (65.9% logic, 34.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK2X'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.127ns (Levels of Logic = 1)
+  Source:            DATA_IN (PAD)
+  Destination:       tdc_data_dec/MDI_1 (FF)
+  Destination Clock: CLK2X rising
+
+  Data Path: DATA_IN to tdc_data_dec/MDI_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   0.725  DATA_IN_IBUF (DATA_IN_IBUF)
+     FD:D                      0.074          tdc_data_dec/MDI_1
+    ----------------------------------------
+    Total                      2.127ns (1.402ns logic, 0.725ns route)
+                                       (65.9% logic, 34.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 89 / 89
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            DATA_OUT_87 (FF)
+  Destination:       DATA_OUT<87> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: DATA_OUT_87 to DATA_OUT<87>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.525   0.725  DATA_OUT_87 (DATA_OUT_87)
+     OBUF:I->O                 2.912          DATA_OUT_87_OBUF (DATA_OUT<87>)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.878|         |         |         |
+CLK2X          |    1.683|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK2X
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.386|         |         |         |
+CLK2X          |    2.049|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK8X
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.831|         |         |         |
+CLK8X          |    4.118|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 3.60 secs
+ 
+--> 
+
+
+Total memory usage is 485020 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   59 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "WebFetch(domain:forums.xilinx.com)",
+      "WebSearch",
+      "WebFetch(domain:www.manualslib.com)"
+    ]
+  }
+}

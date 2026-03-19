@@ -1,0 +1,2 @@
+verilog work "src/manchester/manchester_decoder.v"
+verilog work "src/TDC _data_receive.v"

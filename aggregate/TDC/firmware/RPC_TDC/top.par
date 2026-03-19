@@ -1,0 +1,286 @@
+Release 14.7 par P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+localhost.localdomain::  Mon Mar 16 08:00:55 2026
+
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+
+
+Constraints file: top.pcf.
+Loading device for application Rf_Device from file '6slx9.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
+   "top" is an NCD, version 3.2, device xc6slx9, package ftg256, speed -2
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc6slx9' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.23 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 3,898 out of  11,440   34%
+    Number used as Flip Flops:               3,897
+    Number used as Latches:                      1
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      2,853 out of   5,720   49%
+    Number used as logic:                    2,292 out of   5,720   40%
+      Number using O6 output only:           1,364
+      Number using O5 output only:             348
+      Number using O5 and O6:                  580
+      Number used as ROM:                        0
+    Number used as Memory:                      89 out of   1,440    6%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:            89
+        Number using O6 output only:            80
+        Number using O5 output only:             1
+        Number using O5 and O6:                  8
+    Number used exclusively as route-thrus:    472
+      Number with same-slice register load:    436
+      Number with same-slice carry load:        36
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,353 out of   1,430   94%
+  Number of MUXCYs used:                       580 out of   2,860   20%
+  Number of LUT Flip Flop pairs used:        4,040
+    Number with an unused Flip Flop:           797 out of   4,040   19%
+    Number with an unused LUT:               1,187 out of   4,040   29%
+    Number of fully used LUT-FF pairs:       2,056 out of   4,040   50%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  11,440    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        90 out of     186   48%
+    Number of LOCed IOBs:                       87 out of      90   96%
+    IOB Flip Flops:                              2
+    IOB Master Pads:                             1
+    IOB Slave Pads:                              1
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         2 out of      32    6%
+  Number of RAMB8BWERs:                         31 out of      64   48%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       6 out of      16   37%
+    Number used as BUFGs:                        6
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   1 out of     200    1%
+    Number used as ILOGIC2s:                     1
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                   1 out of     200    1%
+    Number used as OLOGIC2s:                     1
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            1 out of      16    6%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG1_path" TIG; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG2_path" TIG; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG3_path" TIG; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG5_path" TIG; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG6_path" TIG; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG8_path" TIG; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG9_path" TIG; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG10_path" TIG; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG12_path" TIG; ignored during timing analysis.
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
+
+WARNING:Par:288 - The signal calin_IBUF has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 19157 unrouted;      REAL time: 3 secs 
+
+Phase  2  : 15574 unrouted;      REAL time: 4 secs 
+
+Phase  3  : 7318 unrouted;      REAL time: 8 secs 
+
+Phase  4  : 7318 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+
+Updating file: top.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+Total REAL time to Router completion: 15 secs 
+Total CPU time to Router completion: 14 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|TDC_datapack/clk_62M |              |      |      |            |             |
+|                   5 |  BUFGMUX_X2Y3| No   | 1026 |  0.715     |  2.106      |
++---------------------+--------------+------+------+------------+-------------+
+|TDC_datapack/clk250_ |              |      |      |            |             |
+|                   0 | BUFGMUX_X2Y12| No   |  170 |  0.117     |  1.510      |
++---------------------+--------------+------+------+------------+-------------+
+|TDC_datapack/CONTROL |              |      |      |            |             |
+|                0<0> |  BUFGMUX_X2Y4| No   |   56 |  0.107     |  1.510      |
++---------------------+--------------+------+------+------------+-------------+
+|TDC_datapack/clk250_ |              |      |      |            |             |
+|                  90 |  BUFGMUX_X2Y1| No   |   50 |  0.086     |  1.510      |
++---------------------+--------------+------+------+------------+-------------+
+|TDC_datapack/clk250_ |              |      |      |            |             |
+|                 180 |  BUFGMUX_X2Y2| No   |   40 |  0.077     |  1.509      |
++---------------------+--------------+------+------+------------+-------------+
+|TDC_datapack/clk250_ |              |      |      |            |             |
+|                 270 | BUFGMUX_X3Y13| No   |   40 |  0.077     |  1.509      |
++---------------------+--------------+------+------+------------+-------------+
+|          DATA_VALID |         Local|      |    1 |  0.000     |  1.648      |
++---------------------+--------------+------+------+------------+-------------+
+| DATA_VALID_INV_85_o |         Local|      |    1 |  0.000     |  1.784      |
++---------------------+--------------+------+------+------------+-------------+
+|TDC_datapack/icon_0_ |              |      |      |            |             |
+| inst/U0/iUPDATE_OUT |         Local|      |    1 |  0.000     |  1.010      |
++---------------------+--------------+------+------+------------+-------------+
+|TDC_datapack/CONTROL |              |      |      |            |             |
+|               0<13> |         Local|      |    5 |  0.000     |  0.804      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 9
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_TDC_datapack_clk250_0 = PERIOD TIMEGRP | SETUP       |     2.263ns|     1.737ns|       0|           0
+   "TDC_datapack/clk250_0" 4 ns HIGH        | HOLD        |     0.459ns|            |       0|           0
+    50%                                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TDC_datapack_clk250_180 = PERIOD TIMEG | SETUP       |     2.491ns|     1.509ns|       0|           0
+  RP "TDC_datapack/clk250_180" 4 ns         | HOLD        |     0.585ns|            |       0|           0
+   HIGH 50%                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TDC_datapack_clk250_90 = PERIOD TIMEGR | SETUP       |     2.546ns|     1.454ns|       0|           0
+  P "TDC_datapack/clk250_90" 4 ns HIGH      | HOLD        |     0.611ns|            |       0|           0
+      50%                                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TDC_datapack_clk250_270 = PERIOD TIMEG | SETUP       |     2.546ns|     1.454ns|       0|           0
+  RP "TDC_datapack/clk250_270" 4 ns         | HOLD        |     0.611ns|            |       0|           0
+   HIGH 50%                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG1_path" TIG                   | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG2_path" TIG                   | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG3_path" TIG                   | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG4_path" TIG                   | SETUP       |         N/A|     2.853ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG5_path" TIG                   | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG6_path" TIG                   | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG7_path" TIG                   | SETUP       |         N/A|     2.127ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG8_path" TIG                   | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG9_path" TIG                   | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG10_path" TIG                  | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG11_path" TIG                  | SETUP       |         N/A|     2.008ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG12_path" TIG                  | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 17 secs 
+Total CPU time to PAR completion: 15 secs 
+
+Peak Memory Usage:  653 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 12
+Number of info messages: 0
+
+Writing design to file top.ncd
+
+
+
+PAR done!

@@ -1,0 +1,2 @@
+verilog work ../../TCP_clk.v
+verilog work ../example_design/TCP_clk_exdes.v

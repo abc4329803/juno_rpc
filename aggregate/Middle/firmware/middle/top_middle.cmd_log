@@ -1,0 +1,661 @@
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/top_middle.xst" -ofn "/home/ise/VM_FILE/middle/top_middle.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top_middle.ucf -p xc6slx9-ftg256-2 top_middle.ngc top_middle.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_middle_map.ncd top_middle.ngd top_middle.pcf 
+par -w -intstyle ise -ol high -mt off top_middle_map.ncd top_middle.ncd top_middle.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_middle.twx top_middle.ncd -o top_middle.twr top_middle.pcf -ucf top_middle.ucf 
+bitgen -intstyle ise -f top_middle.ut top_middle.ncd 

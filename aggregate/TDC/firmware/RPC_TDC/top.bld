@@ -1,0 +1,187 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top.ucf -p xc6slx9-ftg256-2
+top.ngc top.ngd
+
+Reading NGO file "/home/ise/VM_FILE/RPC_TDC/top.ngc" ...
+Loading design module "ipcore_dir/ila_1.ngc"...
+Loading design module "ipcore_dir/Coarse_Time_Counter.ngc"...
+Loading design module "ipcore_dir/icon_0.ngc"...
+Loading design module "ipcore_dir/timestamp_fifo.ngc"...
+INFO:NgdBuild:1317 - Using core chipscope_ila_v1 requires a ChipScopePro
+   license.  The following blocks are instances of core chipscope_ila_v1:
+	/top/top
+	/top/TDC_datapack/ila_0_inst
+
+-----------------------------------------------
+INFO:Security:71 - If a license for part 'xc6slx9' is available, it will be
+possible to use 'ChipScopePro_TDP' instead of 'ChipScopePro'.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+-----------------------------------------------
+
+-----------------------------------------------
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "top.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG13 = FROM
+   "TDC_datapack/clk_62M5" TO "TDC_datapack/clk250_0" TIG;> [top.ucf(180)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk_62M5'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG14 = FROM
+   "TDC_datapack/clk_62M5" TO "TDC_datapack/clk250_90" TIG;> [top.ucf(181)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk_62M5'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG15 = FROM
+   "TDC_datapack/clk_62M5" TO "TDC_datapack/clk250_180" TIG;> [top.ucf(182)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk_62M5'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG16 = FROM
+   "TDC_datapack/clk_62M5" TO "TDC_datapack/clk250_270" TIG;> [top.ucf(183)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk_62M5'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG17 = FROM
+   "TDC_datapack/clk250_0" TO "TDC_datapack/clk_62M5" TIG;> [top.ucf(184)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk_62M5'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG18 = FROM
+   "TDC_datapack/clk250_90" TO "TDC_datapack/clk_62M5" TIG;> [top.ucf(185)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk_62M5'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG19 = FROM
+   "TDC_datapack/clk250_180" TO "TDC_datapack/clk_62M5" TIG;> [top.ucf(186)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk_62M5'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_TIG20 = FROM
+   "TDC_datapack/clk250_270" TO "TDC_datapack/clk_62M5" TIG;> [top.ucf(187)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'TDC_datapack/clk_62M5'.
+
+WARNING:ConstraintSystem - TNM : CLKIN was distributed to a DCM but new TNM
+   constraints were not derived. The requirement for derived TNM constraints is
+   that the distributed TNM is referenced by no more than a single PERIOD
+   constraint. Non-PERIOD referencers are also not allowed. This TNM is used in
+   the following user groups or specifications:
+   <TIMESPEC TS_CLKIN = PERIOD "CLKIN" 62.5 MHz HIGH 50 %;> [top.ucf(12)]
+   <TIMESPEC TS_TIG21 = FROM "CLKIN" TO "TDC_datapack/clk250_0" TIG;>
+   [top.ucf(190)]
+   <TIMESPEC TS_TIG22 = FROM "CLKIN" TO "TDC_datapack/clk250_90" TIG;>
+   [top.ucf(191)]
+   <TIMESPEC TS_TIG23 = FROM "CLKIN" TO "TDC_datapack/clk250_180" TIG;>
+   [top.ucf(192)]
+   <TIMESPEC TS_TIG24 = FROM "CLKIN" TO "TDC_datapack/clk250_270" TIG;>
+   [top.ucf(193)]
+   <TIMESPEC TS_TIG25 = FROM "TDC_datapack/clk250_0" TO "CLKIN" TIG;>
+   [top.ucf(194)]
+   <TIMESPEC TS_TIG26 = FROM "TDC_datapack/clk250_90" TO "CLKIN" TIG;>
+   [top.ucf(195)]
+   <TIMESPEC TS_TIG27 = FROM "TDC_datapack/clk250_180" TO "CLKIN" TIG;>
+   [top.ucf(196)]
+   <TIMESPEC TS_TIG28 = FROM "TDC_datapack/clk250_270" TO "CLKIN" TIG;>
+   [top.ucf(197)]
+
+WARNING:ConstraintSystem:190 - The TNM 'CLKIN', does not directly or indirectly
+   drive any flip-flops, latches and/or RAMS and cannot be actively used by the
+   referencing Period constraint 'TS_CLKIN'. If clock manager blocks are
+   directly or indirectly driven, a new TNM and PERIOD are derived only if the
+   PERIOD constraint is the only referencing constraint and if an output of the
+   clock manager block drives flip-flops, latches or RAMs.  
+   This TNM is used in the following user groups and/or specifications:
+   <TIMESPEC TS_CLKIN = PERIOD "CLKIN" 62.5 MHz HIGH 50 %;> [top.ucf(12)]
+   <TIMESPEC TS_TIG21 = FROM "CLKIN" TO "TDC_datapack/clk250_0" TIG;>
+   [top.ucf(190)]
+   <TIMESPEC TS_TIG22 = FROM "CLKIN" TO "TDC_datapack/clk250_90" TIG;>
+   [top.ucf(191)]
+   <TIMESPEC TS_TIG23 = FROM "CLKIN" TO "TDC_datapack/clk250_180" TIG;>
+   [top.ucf(192)]
+   <TIMESPEC TS_TIG24 = FROM "CLKIN" TO "TDC_datapack/clk250_270" TIG;>
+   [top.ucf(193)]
+   <TIMESPEC TS_TIG25 = FROM "TDC_datapack/clk250_0" TO "CLKIN" TIG;>
+   [top.ucf(194)]
+   <TIMESPEC TS_TIG26 = FROM "TDC_datapack/clk250_90" TO "CLKIN" TIG;>
+   [top.ucf(195)]
+   <TIMESPEC TS_TIG27 = FROM "TDC_datapack/clk250_180" TO "CLKIN" TIG;>
+   [top.ucf(196)]
+   <TIMESPEC TS_TIG28 = FROM "TDC_datapack/clk250_270" TO "CLKIN" TIG;>
+   [top.ucf(197)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_CLKIN = PERIOD "CLKIN" 62.5 MHz HIGH 50 %;> [top.ucf(12)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_TIG21 = FROM "CLKIN" TO "TDC_datapack/clk250_0" TIG;>
+   [top.ucf(190)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_TIG22 = FROM "CLKIN" TO "TDC_datapack/clk250_90" TIG;>
+   [top.ucf(191)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_TIG23 = FROM "CLKIN" TO "TDC_datapack/clk250_180" TIG;>
+   [top.ucf(192)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_TIG24 = FROM "CLKIN" TO "TDC_datapack/clk250_270" TIG;>
+   [top.ucf(193)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_TIG25 = FROM "TDC_datapack/clk250_0" TO "CLKIN" TIG;>
+   [top.ucf(194)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_TIG26 = FROM "TDC_datapack/clk250_90" TO "CLKIN" TIG;>
+   [top.ucf(195)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_TIG27 = FROM "TDC_datapack/clk250_180" TO "CLKIN" TIG;>
+   [top.ucf(196)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_TIG28 = FROM "TDC_datapack/clk250_270" TO "CLKIN" TIG;>
+   [top.ucf(197)]
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  19
+
+Total memory usage is 547424 kilobytes
+
+Writing NGD file "top.ngd" ...
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "top.bld"...

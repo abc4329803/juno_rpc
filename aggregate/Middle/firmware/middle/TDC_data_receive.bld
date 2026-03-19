@@ -1,0 +1,1091 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top.ucf -p xc6slx9-ftg256-2
+TDC_data_receive.ngc TDC_data_receive.ngd
+
+Reading NGO file "/home/ise/VM_FILE/middle/TDC_data_receive.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "top.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "TCK_LVCMOS33[2]" LOC = E1 |>
+   [top.ucf(7)]: NET "TCK_LVCMOS33[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TCK_LVCMOS33[2]" LOC = E1 |> [top.ucf(7)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |> [top.ucf(7)]:
+   NET "TCK_LVCMOS33[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 16;> [top.ucf(7)]: NET
+   "TCK_LVCMOS33[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TMS_LVCMOS33[2]" LOC = F1 |>
+   [top.ucf(8)]: NET "TMS_LVCMOS33[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TMS_LVCMOS33[2]" LOC = F1 |> [top.ucf(8)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |> [top.ucf(8)]:
+   NET "TMS_LVCMOS33[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 16;> [top.ucf(8)]: NET
+   "TMS_LVCMOS33[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TDI_LVCMOS33[2]" LOC = G1 |>
+   [top.ucf(9)]: NET "TDI_LVCMOS33[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TDI_LVCMOS33[2]" LOC = G1 |> [top.ucf(9)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |> [top.ucf(9)]:
+   NET "TDI_LVCMOS33[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 16;> [top.ucf(9)]: NET
+   "TDI_LVCMOS33[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TDO_LVCMOS33[2]" LOC = D1 |>
+   [top.ucf(10)]: NET "TDO_LVCMOS33[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TDO_LVCMOS33[2]" LOC = D1 |> [top.ucf(10)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(10)]:
+   NET "TDO_LVCMOS33[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TCK_LVCMOS33[3]" LOC = J1 |>
+   [top.ucf(12)]: NET "TCK_LVCMOS33[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TCK_LVCMOS33[3]" LOC = J1 |> [top.ucf(12)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(12)]:
+   NET "TCK_LVCMOS33[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TMS_LVCMOS33[3]" LOC = K1 |>
+   [top.ucf(13)]: NET "TMS_LVCMOS33[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TMS_LVCMOS33[3]" LOC = K1 |> [top.ucf(13)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(13)]:
+   NET "TMS_LVCMOS33[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TDI_LVCMOS33[3]" LOC = L1 |>
+   [top.ucf(14)]: NET "TDI_LVCMOS33[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TDI_LVCMOS33[3]" LOC = L1 |> [top.ucf(14)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(14)]:
+   NET "TDI_LVCMOS33[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TDO_LVCMOS33[3]" LOC = H1 |>
+   [top.ucf(15)]: NET "TDO_LVCMOS33[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TDO_LVCMOS33[3]" LOC = H1 |> [top.ucf(15)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(15)]:
+   NET "TDO_LVCMOS33[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TCK_LVCMOS33[4]" LOC = N1 |>
+   [top.ucf(17)]: NET "TCK_LVCMOS33[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TCK_LVCMOS33[4]" LOC = N1 |> [top.ucf(17)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |> [top.ucf(17)]:
+   NET "TCK_LVCMOS33[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 16;> [top.ucf(17)]: NET
+   "TCK_LVCMOS33[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TMS_LVCMOS33[4]" LOC = P1 |>
+   [top.ucf(18)]: NET "TMS_LVCMOS33[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TMS_LVCMOS33[4]" LOC = P1 |> [top.ucf(18)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |> [top.ucf(18)]:
+   NET "TMS_LVCMOS33[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 16;> [top.ucf(18)]: NET
+   "TMS_LVCMOS33[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TDI_LVCMOS33[4]" LOC = R1 |>
+   [top.ucf(19)]: NET "TDI_LVCMOS33[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TDI_LVCMOS33[4]" LOC = R1 |> [top.ucf(19)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |> [top.ucf(19)]:
+   NET "TDI_LVCMOS33[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 16;> [top.ucf(19)]: NET
+   "TDI_LVCMOS33[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TDO_LVCMOS33[4]" LOC = M1 |>
+   [top.ucf(20)]: NET "TDO_LVCMOS33[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TDO_LVCMOS33[4]" LOC = M1 |> [top.ucf(20)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(20)]:
+   NET "TDO_LVCMOS33[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TCK_LVCMOS33[5]" LOC = R14 |>
+   [top.ucf(22)]: NET "TCK_LVCMOS33[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TCK_LVCMOS33[5]" LOC = R14 |> [top.ucf(22)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |> [top.ucf(22)]:
+   NET "TCK_LVCMOS33[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 16;> [top.ucf(22)]: NET
+   "TCK_LVCMOS33[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TMS_LVCMOS33[5]" LOC = R15 |>
+   [top.ucf(23)]: NET "TMS_LVCMOS33[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TMS_LVCMOS33[5]" LOC = R15 |> [top.ucf(23)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |> [top.ucf(23)]:
+   NET "TMS_LVCMOS33[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 16;> [top.ucf(23)]: NET
+   "TMS_LVCMOS33[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TDI_LVCMOS33[5]" LOC = P15 |>
+   [top.ucf(24)]: NET "TDI_LVCMOS33[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TDI_LVCMOS33[5]" LOC = P15 |> [top.ucf(24)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33 |> [top.ucf(24)]:
+   NET "TDI_LVCMOS33[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 16;> [top.ucf(24)]: NET
+   "TDI_LVCMOS33[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TDO_LVCMOS33[5]" LOC = R12 |>
+   [top.ucf(25)]: NET "TDO_LVCMOS33[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TDO_LVCMOS33[5]" LOC = R12 |> [top.ucf(25)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(25)]:
+   NET "TDO_LVCMOS33[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TCK_LVCMOS33[6]" LOC = T13 |>
+   [top.ucf(27)]: NET "TCK_LVCMOS33[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TCK_LVCMOS33[6]" LOC = T13 |> [top.ucf(27)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(27)]:
+   NET "TCK_LVCMOS33[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TMS_LVCMOS33[6]" LOC = T14 |>
+   [top.ucf(29)]: NET "TMS_LVCMOS33[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TMS_LVCMOS33[6]" LOC = T14 |> [top.ucf(29)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(29)]:
+   NET "TMS_LVCMOS33[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TDI_LVCMOS33[6]" LOC = T15 |>
+   [top.ucf(31)]: NET "TDI_LVCMOS33[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TDI_LVCMOS33[6]" LOC = T15 |> [top.ucf(31)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(31)]:
+   NET "TDI_LVCMOS33[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "TDO_LVCMOS33[6]" LOC = T12 |>
+   [top.ucf(33)]: NET "TDO_LVCMOS33[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "TDO_LVCMOS33[6]" LOC = T12 |> [top.ucf(33)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(33)]:
+   NET "TDO_LVCMOS33[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <PIN "tck_bufg.O" CLOCK_DEDICATED_ROUTE =
+   FALSE;> [top.ucf(42)]: PIN "tck_bufg.O" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "RESET_LVDS33_P[2]" LOC = P7 |>
+   [top.ucf(44)]: NET "RESET_LVDS33_P[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RESET_LVDS33_P[2]" LOC = P7 |> [top.ucf(44)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(44)]:
+   NET "RESET_LVDS33_P[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "CLK_LVDS33_P[2]" LOC = M6 |>
+   [top.ucf(46)]: NET "CLK_LVDS33_P[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "CLK_LVDS33_P[2]" LOC = M6 |> [top.ucf(46)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(46)]:
+   NET "CLK_LVDS33_P[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DATA_LVDS33_P[2]" LOC = D5 |>
+   [top.ucf(47)]: NET "DATA_LVDS33_P[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DATA_LVDS33_P[2]" LOC = D5 |> [top.ucf(47)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(47)]:
+   NET "DATA_LVDS33_P[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FB_LVDS33_P[2]" LOC = P5 |>
+   [top.ucf(49)]: NET "FB_LVDS33_P[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FB_LVDS33_P[2]" LOC = P5 |> [top.ucf(49)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(49)]:
+   NET "FB_LVDS33_P[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FB_LVDS33_N[2]" LOC = N5 |>
+   [top.ucf(50)]: NET "FB_LVDS33_N[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FB_LVDS33_N[2]" LOC = N5 |> [top.ucf(50)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(50)]:
+   NET "FB_LVDS33_N[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "RESET_LVDS33_P[3]" LOC = N12 |>
+   [top.ucf(53)]: NET "RESET_LVDS33_P[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RESET_LVDS33_P[3]" LOC = N12 |> [top.ucf(53)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(53)]:
+   NET "RESET_LVDS33_P[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "CLK_LVDS33_P[3]" LOC = N11 |>
+   [top.ucf(55)]: NET "CLK_LVDS33_P[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "CLK_LVDS33_P[3]" LOC = N11 |> [top.ucf(55)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(55)]:
+   NET "CLK_LVDS33_P[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DATA_LVDS33_P[3]" LOC = N9 |>
+   [top.ucf(57)]: NET "DATA_LVDS33_P[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DATA_LVDS33_P[3]" LOC = N9 |> [top.ucf(57)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(57)]:
+   NET "DATA_LVDS33_P[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FB_LVDS33_P[3]" LOC = M10 |>
+   [top.ucf(59)]: NET "FB_LVDS33_P[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FB_LVDS33_P[3]" LOC = M10 |> [top.ucf(59)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(59)]:
+   NET "FB_LVDS33_P[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FB_LVDS33_N[3]" LOC = L10 |>
+   [top.ucf(60)]: NET "FB_LVDS33_N[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FB_LVDS33_N[3]" LOC = L10 |> [top.ucf(60)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(60)]:
+   NET "FB_LVDS33_N[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "RESET_LVDS33_P[4]" LOC = R3 |>
+   [top.ucf(63)]: NET "RESET_LVDS33_P[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RESET_LVDS33_P[4]" LOC = R3 |> [top.ucf(63)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(63)]:
+   NET "RESET_LVDS33_P[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "CLK_LVDS33_P[4]" LOC = C4 |>
+   [top.ucf(64)]: NET "CLK_LVDS33_P[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "CLK_LVDS33_P[4]" LOC = C4 |> [top.ucf(64)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(64)]:
+   NET "CLK_LVDS33_P[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DATA_LVDS33_P[4]" LOC = B6 |>
+   [top.ucf(65)]: NET "DATA_LVDS33_P[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DATA_LVDS33_P[4]" LOC = B6 |> [top.ucf(65)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(65)]:
+   NET "DATA_LVDS33_P[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FB_LVDS33_P[4]" LOC = B5 |>
+   [top.ucf(66)]: NET "FB_LVDS33_P[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FB_LVDS33_P[4]" LOC = B5 |> [top.ucf(66)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(66)]:
+   NET "FB_LVDS33_P[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FB_LVDS33_N[4]" LOC = A5 |>
+   [top.ucf(67)]: NET "FB_LVDS33_N[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FB_LVDS33_N[4]" LOC = A5 |> [top.ucf(67)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(67)]:
+   NET "FB_LVDS33_N[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "RESET_LVDS33_P[5]" LOC = R7 |>
+   [top.ucf(69)]: NET "RESET_LVDS33_P[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RESET_LVDS33_P[5]" LOC = R7 |> [top.ucf(69)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(69)]:
+   NET "RESET_LVDS33_P[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "CLK_LVDS33_P[5]" LOC = P6 |>
+   [top.ucf(71)]: NET "CLK_LVDS33_P[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "CLK_LVDS33_P[5]" LOC = P6 |> [top.ucf(71)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(71)]:
+   NET "CLK_LVDS33_P[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DATA_LVDS33_P[5]" LOC = P4 |>
+   [top.ucf(73)]: NET "DATA_LVDS33_P[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DATA_LVDS33_P[5]" LOC = P4 |> [top.ucf(73)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(73)]:
+   NET "DATA_LVDS33_P[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FB_LVDS33_P[5]" LOC = T5 |>
+   [top.ucf(75)]: NET "FB_LVDS33_P[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FB_LVDS33_P[5]" LOC = T5 |> [top.ucf(75)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(75)]:
+   NET "FB_LVDS33_P[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FB_LVDS33_N[5]" LOC = R5 |>
+   [top.ucf(76)]: NET "FB_LVDS33_N[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FB_LVDS33_N[5]" LOC = R5 |> [top.ucf(76)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(76)]:
+   NET "FB_LVDS33_N[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "RESET_LVDS33_P[6]" LOC = R11 |>
+   [top.ucf(78)]: NET "RESET_LVDS33_P[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RESET_LVDS33_P[6]" LOC = R11 |> [top.ucf(78)]' could not be found and
+   so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(78)]:
+   NET "RESET_LVDS33_P[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "CLK_LVDS33_P[6]" LOC = P10 |>
+   [top.ucf(80)]: NET "CLK_LVDS33_P[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "CLK_LVDS33_P[6]" LOC = P10 |> [top.ucf(80)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(80)]:
+   NET "CLK_LVDS33_P[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DATA_LVDS33_P[6]" LOC = P8 |>
+   [top.ucf(82)]: NET "DATA_LVDS33_P[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DATA_LVDS33_P[6]" LOC = P8 |> [top.ucf(82)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(82)]:
+   NET "DATA_LVDS33_P[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FB_LVDS33_P[6]" LOC = T9 |>
+   [top.ucf(84)]: NET "FB_LVDS33_P[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FB_LVDS33_P[6]" LOC = T9 |> [top.ucf(84)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(84)]:
+   NET "FB_LVDS33_P[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FB_LVDS33_N[6]" LOC = R9 |>
+   [top.ucf(85)]: NET "FB_LVDS33_N[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FB_LVDS33_N[6]" LOC = R9 |> [top.ucf(85)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(85)]:
+   NET "FB_LVDS33_N[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FTCK_LVDS33_P" LOC = C9 |>
+   [top.ucf(89)]: NET "FTCK_LVDS33_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FTCK_LVDS33_P" LOC = C9 |> [top.ucf(89)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(89)]:
+   NET "FTCK_LVDS33_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FTCK_LVDS33_N" LOC = A9 |>
+   [top.ucf(90)]: NET "FTCK_LVDS33_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FTCK_LVDS33_N" LOC = A9 |> [top.ucf(90)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(90)]:
+   NET "FTCK_LVDS33_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FTMS_LVDS33_P" LOC = C11 |>
+   [top.ucf(91)]: NET "FTMS_LVDS33_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FTMS_LVDS33_P" LOC = C11 |> [top.ucf(91)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(91)]:
+   NET "FTMS_LVDS33_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FTMS_LVDS33_N" LOC = A11 |>
+   [top.ucf(92)]: NET "FTMS_LVDS33_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FTMS_LVDS33_N" LOC = A11 |> [top.ucf(92)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(92)]:
+   NET "FTMS_LVDS33_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FTDI_LVDS33_P" LOC = B10 |>
+   [top.ucf(93)]: NET "FTDI_LVDS33_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FTDI_LVDS33_P" LOC = B10 |> [top.ucf(93)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(93)]:
+   NET "FTDI_LVDS33_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FTDI_LVDS33_N" LOC = A10 |>
+   [top.ucf(94)]: NET "FTDI_LVDS33_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FTDI_LVDS33_N" LOC = A10 |> [top.ucf(94)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(94)]:
+   NET "FTDI_LVDS33_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FTDO_LVDS33_P" LOC = B12 |>
+   [top.ucf(95)]: NET "FTDO_LVDS33_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FTDO_LVDS33_P" LOC = B12 |> [top.ucf(95)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(95)]:
+   NET "FTDO_LVDS33_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FTDO_LVDS33_N" LOC = A12 |>
+   [top.ucf(96)]: NET "FTDO_LVDS33_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "FTDO_LVDS33_N" LOC = A12 |> [top.ucf(96)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(96)]:
+   NET "FTDO_LVDS33_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_RESET_IN_P" LOC = E10 |>
+   [top.ucf(98)]: NET "WR_RESET_IN_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WR_RESET_IN_P" LOC = E10 |> [top.ucf(98)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(98)]:
+   NET "WR_RESET_IN_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_RESET_IN_N" LOC = C10 |>
+   [top.ucf(99)]: NET "WR_RESET_IN_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WR_RESET_IN_N" LOC = C10 |> [top.ucf(99)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(99)]:
+   NET "WR_RESET_IN_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_CLK_IN_P" LOC = E7 |>
+   [top.ucf(100)]: NET "WR_CLK_IN_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WR_CLK_IN_P" LOC = E7 |> [top.ucf(100)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(100)]:
+   NET "WR_CLK_IN_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_CLK_IN_N" LOC = E8 |>
+   [top.ucf(101)]: NET "WR_CLK_IN_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WR_CLK_IN_N" LOC = E8 |> [top.ucf(101)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(101)]:
+   NET "WR_CLK_IN_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_DATA_OUT_P" LOC = C7 |>
+   [top.ucf(102)]: NET "WR_DATA_OUT_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WR_DATA_OUT_P" LOC = C7 |> [top.ucf(102)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(102)]:
+   NET "WR_DATA_OUT_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_DATA_OUT_N" LOC = A7 |>
+   [top.ucf(103)]: NET "WR_DATA_OUT_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WR_DATA_OUT_N" LOC = A7 |> [top.ucf(103)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(103)]:
+   NET "WR_DATA_OUT_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_FB_OUT_P" LOC = B8 |>
+   [top.ucf(104)]: NET "WR_FB_OUT_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WR_FB_OUT_P" LOC = B8 |> [top.ucf(104)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(104)]:
+   NET "WR_FB_OUT_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_FB_OUT_N" LOC = A8 |>
+   [top.ucf(105)]: NET "WR_FB_OUT_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "WR_FB_OUT_N" LOC = A8 |> [top.ucf(105)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVDS_33;> [top.ucf(105)]:
+   NET "WR_FB_OUT_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_CLK_IN_P" TNM_NET =
+   "WR_CLK_IN_P";> [top.ucf(107)]: NET "WR_CLK_IN_P" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_WR_CLK_IN_P = PERIOD
+   "WR_CLK_IN_P" 62.5 MHz HIGH 50 %;> [top.ucf(108)]: Unable to find an active
+   'TNM' or 'TimeGrp' constraint named 'WR_CLK_IN_P'.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_RESET_IN_P" PULLDOWN;>
+   [top.ucf(110)]: NET "WR_RESET_IN_P" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_RESET_IN_N" PULLDOWN;>
+   [top.ucf(111)]: NET "WR_RESET_IN_N" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DAC_SCLK" LOC = M16 |>
+   [top.ucf(117)]: NET "DAC_SCLK" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DAC_SCLK" LOC = M16 |> [top.ucf(117)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(117)]:
+   NET "DAC_SCLK" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DAC_nSYNC" LOC = L16 |>
+   [top.ucf(118)]: NET "DAC_nSYNC" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DAC_nSYNC" LOC = L16 |> [top.ucf(118)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(118)]:
+   NET "DAC_nSYNC" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DAC_SDI" LOC = P16 |>
+   [top.ucf(119)]: NET "DAC_SDI" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DAC_SDI" LOC = P16 |> [top.ucf(119)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(119)]:
+   NET "DAC_SDI" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DAC_SDO" LOC = N16 |>
+   [top.ucf(120)]: NET "DAC_SDO" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DAC_SDO" LOC = N16 |> [top.ucf(120)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(120)]:
+   NET "DAC_SDO" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DAC_nRESET" LOC = R16 |>
+   [top.ucf(121)]: NET "DAC_nRESET" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DAC_nRESET" LOC = R16 |> [top.ucf(121)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVCMOS33;> [top.ucf(121)]:
+   NET "DAC_nRESET" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "DAC_SDO" PULLDOWN;> [top.ucf(132)]:
+   NET "DAC_SDO" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <PIN "BUFG_clk_12M5.O"
+   CLOCK_DEDICATED_ROUTE = FALSE;> [top.ucf(145)]: PIN "BUFG_clk_12M5.O" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "WR_CLK_IN_P" TNM_NET =
+   "clk_in_62M5";> [top.ucf(158)]: NET "WR_CLK_IN_P" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_clk_in_62M5 = PERIOD
+   "clk_in_62M5" 16 ns HIGH 50%;> [top.ucf(159)]: Unable to find an active 'TNM'
+   or 'TimeGrp' constraint named 'clk_in_62M5'.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "clk_62M5" TNM_NET = "TNM_GCLK";>
+   [top.ucf(189)]: NET "clk_62M5" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:191 - The TNM 'WR_CLK_IN_P', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_WR_CLK_IN_P'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_WR_CLK_IN_P = PERIOD "WR_CLK_IN_P" 62.5 MHz HIGH 50 %;>
+   [top.ucf(108)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_WR_CLK_IN_P = PERIOD "WR_CLK_IN_P" 62.5 MHz HIGH 50 %;>
+   [top.ucf(108)]
+
+WARNING:ConstraintSystem:191 - The TNM 'clk_in_62M5', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_clk_in_62M5'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_clk_in_62M5 = PERIOD "clk_in_62M5" 16 ns HIGH 50%;>
+   [top.ucf(159)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_clk_in_62M5 = PERIOD "clk_in_62M5" 16 ns HIGH 50%;>
+   [top.ucf(159)]
+
+WARNING:ConstraintSystem:194 - The TNM 'TNM_GCLK', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMs and is not actively used
+   by any referencing constraint.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:   149
+  Number of warnings:  73
+
+Total memory usage is 498204 kilobytes
+
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "TDC_data_receive.bld"...

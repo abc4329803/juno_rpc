@@ -1,0 +1,20 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Mar 16 08:52:36 2026
+
+drc -z top_middle.ncd top_middle.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net CONTROL0<13> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+WARNING:PhysDesignRules:1863 - Unexpected differential configuration for comp
+   WR_RESET_IN_P. The u_ibufds/IBUFDS buffer is programmed as a true
+   differential. Adding a pullup, pulldown, or keeper to a differential IO can
+   create signal integrity problems and can violate specifications.
+DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

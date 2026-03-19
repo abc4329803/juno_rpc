@@ -1,0 +1,1623 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf top.ucf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc6slx9,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG1_path" TIG; ignored during 
+   timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG2_path" TIG; ignored during 
+   timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG3_path" TIG; ignored during 
+   timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG5_path" TIG; ignored during 
+   timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG6_path" TIG; ignored during 
+   timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG8_path" TIG; ignored during 
+   timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG9_path" TIG; ignored during 
+   timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG10_path" TIG; ignored 
+   during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG12_path" TIG; ignored 
+   during timing analysis.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_TDC_datapack_clk250_0 = PERIOD TIMEGRP 
+"TDC_datapack/clk250_0" 4 ns HIGH         50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 230 paths analyzed, 230 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   1.737ns.
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[2].Hitin0 (SLICE_X5Y22.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.263ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[1].Hitin0 (FF)
+  Destination:          TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[2].Hitin0 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.625ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.025ns (0.322 - 0.347)
+  Source Clock:         TDC_datapack/clk250_0 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_0 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[1].Hitin0 to TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[2].Hitin0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y22.DQ       Tcko                  0.430   TDC_datapack/PAD[6].PTDC/hit0<1>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[1].Hitin0
+    SLICE_X5Y22.DX       net (fanout=1)        1.081   TDC_datapack/PAD[6].PTDC/hit0<1>
+    SLICE_X5Y22.CLK      Tdick                 0.114   TDC_datapack/PAD[6].PTDC/hit0<2>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[2].Hitin0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.625ns (0.544ns logic, 1.081ns route)
+                                                       (33.5% logic, 66.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[1].Pipeline180 (SLICE_X12Y38.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.293ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[0].Pipeline180 (FF)
+  Destination:          TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[1].Pipeline180 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.567ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.053ns (0.590 - 0.643)
+  Source Clock:         TDC_datapack/clk250_0 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_0 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[0].Pipeline180 to TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[1].Pipeline180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y38.CQ      Tcko                  0.476   TDC_datapack/PAD[3].PTDC/pipeline270<0>
+                                                       TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[0].Pipeline180
+    SLICE_X12Y38.CX      net (fanout=2)        1.006   TDC_datapack/PAD[3].PTDC/pipeline180<0>
+    SLICE_X12Y38.CLK     Tdick                 0.085   TDC_datapack/PAD[3].PTDC/pipeline270<1>
+                                                       TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[1].Pipeline180
+    -------------------------------------------------  ---------------------------
+    Total                                      1.567ns (0.561ns logic, 1.006ns route)
+                                                       (35.8% logic, 64.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Pipeline180 (SLICE_X12Y46.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.293ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Pipeline180 (FF)
+  Destination:          TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Pipeline180 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.567ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.053ns (0.599 - 0.652)
+  Source Clock:         TDC_datapack/clk250_0 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_0 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Pipeline180 to TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Pipeline180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y46.CQ      Tcko                  0.476   TDC_datapack/PAD[2].PTDC/pipeline270<0>
+                                                       TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Pipeline180
+    SLICE_X12Y46.CX      net (fanout=2)        1.006   TDC_datapack/PAD[2].PTDC/pipeline180<0>
+    SLICE_X12Y46.CLK     Tdick                 0.085   TDC_datapack/PAD[2].PTDC/pipeline270<1>
+                                                       TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Pipeline180
+    -------------------------------------------------  ---------------------------
+    Total                                      1.567ns (0.561ns logic, 1.006ns route)
+                                                       (35.8% logic, 64.2% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_TDC_datapack_clk250_0 = PERIOD TIMEGRP "TDC_datapack/clk250_0" 4 ns HIGH
+        50%;
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Pipeline0 (SLICE_X11Y5.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.459ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin0 (FF)
+  Destination:          TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Pipeline0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.462ns (Levels of Logic = 0)
+  Clock Path Skew:      0.003ns (0.097 - 0.094)
+  Source Clock:         TDC_datapack/clk250_0 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_0 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin0 to TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Pipeline0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y5.DQ        Tcko                  0.198   TDC_datapack/PAD[9].PTDC/hit0<4>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin0
+    SLICE_X11Y5.CX       net (fanout=1)        0.205   TDC_datapack/PAD[9].PTDC/hit0<4>
+    SLICE_X11Y5.CLK      Tckdi       (-Th)    -0.059   TDC_datapack/PAD[9].PTDC/pipeline90<0>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Pipeline0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.462ns (0.257ns logic, 0.205ns route)
+                                                       (55.6% logic, 44.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Pipeline0 (SLICE_X11Y22.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.459ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin0 (FF)
+  Destination:          TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Pipeline0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.462ns (Levels of Logic = 0)
+  Clock Path Skew:      0.003ns (0.094 - 0.091)
+  Source Clock:         TDC_datapack/clk250_0 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_0 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin0 to TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Pipeline0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y22.DQ       Tcko                  0.198   TDC_datapack/PAD[6].PTDC/hit0<4>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin0
+    SLICE_X11Y22.CX      net (fanout=1)        0.205   TDC_datapack/PAD[6].PTDC/hit0<4>
+    SLICE_X11Y22.CLK     Tckdi       (-Th)    -0.059   TDC_datapack/PAD[6].PTDC/pipeline90<0>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Pipeline0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.462ns (0.257ns logic, 0.205ns route)
+                                                       (55.6% logic, 44.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[0].Pipeline0 (SLICE_X11Y38.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.459ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[4].Hitin0 (FF)
+  Destination:          TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[0].Pipeline0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.462ns (Levels of Logic = 0)
+  Clock Path Skew:      0.003ns (0.095 - 0.092)
+  Source Clock:         TDC_datapack/clk250_0 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_0 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[4].Hitin0 to TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[0].Pipeline0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y38.DQ       Tcko                  0.198   TDC_datapack/PAD[3].PTDC/hit0<4>
+                                                       TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[4].Hitin0
+    SLICE_X11Y38.CX      net (fanout=1)        0.205   TDC_datapack/PAD[3].PTDC/hit0<4>
+    SLICE_X11Y38.CLK     Tckdi       (-Th)    -0.059   TDC_datapack/PAD[3].PTDC/pipeline90<0>
+                                                       TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[0].Pipeline0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.462ns (0.257ns logic, 0.205ns route)
+                                                       (55.6% logic, 44.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_TDC_datapack_clk250_0 = PERIOD TIMEGRP "TDC_datapack/clk250_0" 4 ns HIGH
+        50%;
+--------------------------------------------------------------------------------
+Slack: 3.520ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[9].PTDC/hit90<4>/CLK
+  Logical resource: TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin90/CK
+  Location pin: SLICE_X8Y5.CLK
+  Clock network: TDC_datapack/clk250_0
+--------------------------------------------------------------------------------
+Slack: 3.520ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[8].PTDC/hit90<4>/CLK
+  Logical resource: TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[4].Hitin90/CK
+  Location pin: SLICE_X8Y10.CLK
+  Clock network: TDC_datapack/clk250_0
+--------------------------------------------------------------------------------
+Slack: 3.520ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[7].PTDC/hit90<4>/CLK
+  Logical resource: TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin90/CK
+  Location pin: SLICE_X8Y15.CLK
+  Clock network: TDC_datapack/clk250_0
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_TDC_datapack_clk250_90 = PERIOD TIMEGRP 
+"TDC_datapack/clk250_90" 4 ns HIGH         50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 30 paths analyzed, 30 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   1.454ns.
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin90 (SLICE_X2Y15.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.546ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin90 (FF)
+  Destination:          TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin90 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.349ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.018ns (0.340 - 0.358)
+  Source Clock:         TDC_datapack/clk250_90 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_90 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin90 to TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin90
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y15.DQ       Tcko                  0.525   TDC_datapack/PAD[7].PTDC/hit90<0>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin90
+    SLICE_X2Y15.DX       net (fanout=1)        0.710   TDC_datapack/PAD[7].PTDC/hit90<0>
+    SLICE_X2Y15.CLK      Tdick                 0.114   TDC_datapack/PAD[7].PTDC/hit90<1>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin90
+    -------------------------------------------------  ---------------------------
+    Total                                      1.349ns (0.639ns logic, 0.710ns route)
+                                                       (47.4% logic, 52.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Hitin90 (SLICE_X2Y46.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.546ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Hitin90 (FF)
+  Destination:          TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Hitin90 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.349ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.018ns (0.339 - 0.357)
+  Source Clock:         TDC_datapack/clk250_90 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_90 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Hitin90 to TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Hitin90
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y46.DQ       Tcko                  0.525   TDC_datapack/PAD[2].PTDC/hit90<0>
+                                                       TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Hitin90
+    SLICE_X2Y46.DX       net (fanout=1)        0.710   TDC_datapack/PAD[2].PTDC/hit90<0>
+    SLICE_X2Y46.CLK      Tdick                 0.114   TDC_datapack/PAD[2].PTDC/hit90<1>
+                                                       TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Hitin90
+    -------------------------------------------------  ---------------------------
+    Total                                      1.349ns (0.639ns logic, 0.710ns route)
+                                                       (47.4% logic, 52.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[3].Hitin90 (SLICE_X6Y10.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.546ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[2].Hitin90 (FF)
+  Destination:          TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[3].Hitin90 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.349ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.018ns (0.325 - 0.343)
+  Source Clock:         TDC_datapack/clk250_90 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_90 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[2].Hitin90 to TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[3].Hitin90
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y10.DQ       Tcko                  0.525   TDC_datapack/PAD[8].PTDC/hit90<2>
+                                                       TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[2].Hitin90
+    SLICE_X6Y10.DX       net (fanout=1)        0.710   TDC_datapack/PAD[8].PTDC/hit90<2>
+    SLICE_X6Y10.CLK      Tdick                 0.114   TDC_datapack/PAD[8].PTDC/hit90<3>
+                                                       TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[3].Hitin90
+    -------------------------------------------------  ---------------------------
+    Total                                      1.349ns (0.639ns logic, 0.710ns route)
+                                                       (47.4% logic, 52.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_TDC_datapack_clk250_90 = PERIOD TIMEGRP "TDC_datapack/clk250_90" 4 ns HIGH
+        50%;
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin90 (SLICE_X2Y5.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.611ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin90 (FF)
+  Destination:          TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin90 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.615ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.114 - 0.110)
+  Source Clock:         TDC_datapack/clk250_90 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_90 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin90 to TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin90
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y5.DQ        Tcko                  0.234   TDC_datapack/PAD[9].PTDC/hit90<0>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin90
+    SLICE_X2Y5.DX        net (fanout=1)        0.333   TDC_datapack/PAD[9].PTDC/hit90<0>
+    SLICE_X2Y5.CLK       Tckdi       (-Th)    -0.048   TDC_datapack/PAD[9].PTDC/hit90<1>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin90
+    -------------------------------------------------  ---------------------------
+    Total                                      0.615ns (0.282ns logic, 0.333ns route)
+                                                       (45.9% logic, 54.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[1].Hitin90 (SLICE_X2Y10.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.611ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[0].Hitin90 (FF)
+  Destination:          TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[1].Hitin90 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.615ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.114 - 0.110)
+  Source Clock:         TDC_datapack/clk250_90 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_90 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[0].Hitin90 to TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[1].Hitin90
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y10.DQ       Tcko                  0.234   TDC_datapack/PAD[8].PTDC/hit90<0>
+                                                       TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[0].Hitin90
+    SLICE_X2Y10.DX       net (fanout=1)        0.333   TDC_datapack/PAD[8].PTDC/hit90<0>
+    SLICE_X2Y10.CLK      Tckdi       (-Th)    -0.048   TDC_datapack/PAD[8].PTDC/hit90<1>
+                                                       TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[1].Hitin90
+    -------------------------------------------------  ---------------------------
+    Total                                      0.615ns (0.282ns logic, 0.333ns route)
+                                                       (45.9% logic, 54.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[1].Hitin90 (SLICE_X2Y22.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.611ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Hitin90 (FF)
+  Destination:          TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[1].Hitin90 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.615ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.111 - 0.107)
+  Source Clock:         TDC_datapack/clk250_90 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_90 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Hitin90 to TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[1].Hitin90
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y22.DQ       Tcko                  0.234   TDC_datapack/PAD[6].PTDC/hit90<0>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Hitin90
+    SLICE_X2Y22.DX       net (fanout=1)        0.333   TDC_datapack/PAD[6].PTDC/hit90<0>
+    SLICE_X2Y22.CLK      Tckdi       (-Th)    -0.048   TDC_datapack/PAD[6].PTDC/hit90<1>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[1].Hitin90
+    -------------------------------------------------  ---------------------------
+    Total                                      0.615ns (0.282ns logic, 0.333ns route)
+                                                       (45.9% logic, 54.1% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_TDC_datapack_clk250_90 = PERIOD TIMEGRP "TDC_datapack/clk250_90" 4 ns HIGH
+        50%;
+--------------------------------------------------------------------------------
+Slack: 3.520ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[9].PTDC/hit90<0>/CLK
+  Logical resource: TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin90/CK
+  Location pin: SLICE_X0Y5.CLK
+  Clock network: TDC_datapack/clk250_90
+--------------------------------------------------------------------------------
+Slack: 3.520ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[8].PTDC/hit90<0>/CLK
+  Logical resource: TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[0].Hitin90/CK
+  Location pin: SLICE_X0Y10.CLK
+  Clock network: TDC_datapack/clk250_90
+--------------------------------------------------------------------------------
+Slack: 3.520ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[7].PTDC/hit90<0>/CLK
+  Logical resource: TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin90/CK
+  Location pin: SLICE_X0Y15.CLK
+  Clock network: TDC_datapack/clk250_90
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_TDC_datapack_clk250_180 = PERIOD TIMEGRP 
+"TDC_datapack/clk250_180" 4 ns         HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 30 paths analyzed, 30 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   1.509ns.
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[2].Hitin180 (SLICE_X5Y33.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.491ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[1].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[2].Hitin180 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.397ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.025ns (0.332 - 0.357)
+  Source Clock:         TDC_datapack/clk250_180 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_180 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[1].Hitin180 to TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[2].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y33.DQ       Tcko                  0.430   TDC_datapack/PAD[4].PTDC/hit180<1>
+                                                       TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[1].Hitin180
+    SLICE_X5Y33.DX       net (fanout=1)        0.853   TDC_datapack/PAD[4].PTDC/hit180<1>
+    SLICE_X5Y33.CLK      Tdick                 0.114   TDC_datapack/PAD[4].PTDC/hit180<2>
+                                                       TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[2].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      1.397ns (0.544ns logic, 0.853ns route)
+                                                       (38.9% logic, 61.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[2].Hitin180 (SLICE_X5Y27.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.492ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[1].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[2].Hitin180 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.397ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.024ns (0.328 - 0.352)
+  Source Clock:         TDC_datapack/clk250_180 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_180 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[1].Hitin180 to TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[2].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y27.DQ       Tcko                  0.430   TDC_datapack/PAD[5].PTDC/hit180<1>
+                                                       TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[1].Hitin180
+    SLICE_X5Y27.DX       net (fanout=1)        0.853   TDC_datapack/PAD[5].PTDC/hit180<1>
+    SLICE_X5Y27.CLK      Tdick                 0.114   TDC_datapack/PAD[5].PTDC/hit180<2>
+                                                       TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[2].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      1.397ns (0.544ns logic, 0.853ns route)
+                                                       (38.9% logic, 61.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[2].Hitin180 (SLICE_X5Y45.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.492ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[2].Hitin180 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.397ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.024ns (0.331 - 0.355)
+  Source Clock:         TDC_datapack/clk250_180 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_180 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Hitin180 to TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[2].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y45.DQ       Tcko                  0.430   TDC_datapack/PAD[2].PTDC/hit180<1>
+                                                       TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Hitin180
+    SLICE_X5Y45.DX       net (fanout=1)        0.853   TDC_datapack/PAD[2].PTDC/hit180<1>
+    SLICE_X5Y45.CLK      Tdick                 0.114   TDC_datapack/PAD[2].PTDC/hit180<2>
+                                                       TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[2].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      1.397ns (0.544ns logic, 0.853ns route)
+                                                       (38.9% logic, 61.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_TDC_datapack_clk250_180 = PERIOD TIMEGRP "TDC_datapack/clk250_180" 4 ns
+        HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin180 (SLICE_X3Y4.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.585ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin180 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.589ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.116 - 0.112)
+  Source Clock:         TDC_datapack/clk250_180 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_180 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin180 to TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y4.DQ        Tcko                  0.198   TDC_datapack/PAD[9].PTDC/hit180<0>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin180
+    SLICE_X3Y4.DX        net (fanout=1)        0.332   TDC_datapack/PAD[9].PTDC/hit180<0>
+    SLICE_X3Y4.CLK       Tckdi       (-Th)    -0.059   TDC_datapack/PAD[9].PTDC/hit180<1>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      0.589ns (0.257ns logic, 0.332ns route)
+                                                       (43.6% logic, 56.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin180 (SLICE_X3Y14.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.585ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin180 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.589ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.121 - 0.117)
+  Source Clock:         TDC_datapack/clk250_180 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_180 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin180 to TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y14.DQ       Tcko                  0.198   TDC_datapack/PAD[7].PTDC/hit180<0>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin180
+    SLICE_X3Y14.DX       net (fanout=1)        0.332   TDC_datapack/PAD[7].PTDC/hit180<0>
+    SLICE_X3Y14.CLK      Tckdi       (-Th)    -0.059   TDC_datapack/PAD[7].PTDC/hit180<1>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      0.589ns (0.257ns logic, 0.332ns route)
+                                                       (43.6% logic, 56.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[1].Hitin180 (SLICE_X3Y27.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.585ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[0].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[1].Hitin180 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.589ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.116 - 0.112)
+  Source Clock:         TDC_datapack/clk250_180 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_180 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[0].Hitin180 to TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[1].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y27.DQ       Tcko                  0.198   TDC_datapack/PAD[5].PTDC/hit180<0>
+                                                       TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[0].Hitin180
+    SLICE_X3Y27.DX       net (fanout=1)        0.332   TDC_datapack/PAD[5].PTDC/hit180<0>
+    SLICE_X3Y27.CLK      Tckdi       (-Th)    -0.059   TDC_datapack/PAD[5].PTDC/hit180<1>
+                                                       TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[1].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      0.589ns (0.257ns logic, 0.332ns route)
+                                                       (43.6% logic, 56.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_TDC_datapack_clk250_180 = PERIOD TIMEGRP "TDC_datapack/clk250_180" 4 ns
+        HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 3.530ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.470ns (2127.660MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[9].PTDC/hit180<0>/CLK
+  Logical resource: TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin180/CK
+  Location pin: SLICE_X1Y4.CLK
+  Clock network: TDC_datapack/clk250_180
+--------------------------------------------------------------------------------
+Slack: 3.530ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.470ns (2127.660MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[8].PTDC/hit180<0>/CLK
+  Logical resource: TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[0].Hitin180/CK
+  Location pin: SLICE_X1Y9.CLK
+  Clock network: TDC_datapack/clk250_180
+--------------------------------------------------------------------------------
+Slack: 3.530ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.470ns (2127.660MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[7].PTDC/hit180<0>/CLK
+  Logical resource: TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin180/CK
+  Location pin: SLICE_X1Y14.CLK
+  Clock network: TDC_datapack/clk250_180
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_TDC_datapack_clk250_270 = PERIOD TIMEGRP 
+"TDC_datapack/clk250_270" 4 ns         HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 30 paths analyzed, 30 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   1.454ns.
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[1].Hitin270 (SLICE_X2Y9.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.546ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[0].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[1].Hitin270 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.349ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.018ns (0.330 - 0.348)
+  Source Clock:         TDC_datapack/clk250_270 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_270 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[0].Hitin270 to TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[1].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y9.DQ        Tcko                  0.525   TDC_datapack/PAD[8].PTDC/hit270<0>
+                                                       TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[0].Hitin270
+    SLICE_X2Y9.DX        net (fanout=1)        0.710   TDC_datapack/PAD[8].PTDC/hit270<0>
+    SLICE_X2Y9.CLK       Tdick                 0.114   TDC_datapack/PAD[8].PTDC/hit270<1>
+                                                       TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[1].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      1.349ns (0.639ns logic, 0.710ns route)
+                                                       (47.4% logic, 52.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[1].Hitin270 (SLICE_X2Y21.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.546ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[1].Hitin270 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.349ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.018ns (0.332 - 0.350)
+  Source Clock:         TDC_datapack/clk250_270 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_270 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Hitin270 to TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[1].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y21.DQ       Tcko                  0.525   TDC_datapack/PAD[6].PTDC/hit270<0>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Hitin270
+    SLICE_X2Y21.DX       net (fanout=1)        0.710   TDC_datapack/PAD[6].PTDC/hit270<0>
+    SLICE_X2Y21.CLK      Tdick                 0.114   TDC_datapack/PAD[6].PTDC/hit270<1>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[1].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      1.349ns (0.639ns logic, 0.710ns route)
+                                                       (47.4% logic, 52.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Hitin270 (SLICE_X2Y45.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.546ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Hitin270 (FF)
+  Requirement:          4.000ns
+  Data Path Delay:      1.349ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.018ns (0.338 - 0.356)
+  Source Clock:         TDC_datapack/clk250_270 rising at 0.000ns
+  Destination Clock:    TDC_datapack/clk250_270 rising at 4.000ns
+  Clock Uncertainty:    0.087ns
+
+  Clock Uncertainty:          0.087ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Hitin270 to TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y45.DQ       Tcko                  0.525   TDC_datapack/PAD[2].PTDC/hit270<0>
+                                                       TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Hitin270
+    SLICE_X2Y45.DX       net (fanout=1)        0.710   TDC_datapack/PAD[2].PTDC/hit270<0>
+    SLICE_X2Y45.CLK      Tdick                 0.114   TDC_datapack/PAD[2].PTDC/hit270<1>
+                                                       TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[1].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      1.349ns (0.639ns logic, 0.710ns route)
+                                                       (47.4% logic, 52.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_TDC_datapack_clk250_270 = PERIOD TIMEGRP "TDC_datapack/clk250_270" 4 ns
+        HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin270 (SLICE_X2Y4.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.611ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin270 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.615ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.116 - 0.112)
+  Source Clock:         TDC_datapack/clk250_270 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_270 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin270 to TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y4.DQ        Tcko                  0.234   TDC_datapack/PAD[9].PTDC/hit270<0>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin270
+    SLICE_X2Y4.DX        net (fanout=1)        0.333   TDC_datapack/PAD[9].PTDC/hit270<0>
+    SLICE_X2Y4.CLK       Tckdi       (-Th)    -0.048   TDC_datapack/PAD[9].PTDC/hit270<1>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[1].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      0.615ns (0.282ns logic, 0.333ns route)
+                                                       (45.9% logic, 54.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin270 (SLICE_X2Y14.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.611ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin270 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.615ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.121 - 0.117)
+  Source Clock:         TDC_datapack/clk250_270 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_270 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin270 to TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y14.DQ       Tcko                  0.234   TDC_datapack/PAD[7].PTDC/hit270<0>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin270
+    SLICE_X2Y14.DX       net (fanout=1)        0.333   TDC_datapack/PAD[7].PTDC/hit270<0>
+    SLICE_X2Y14.CLK      Tckdi       (-Th)    -0.048   TDC_datapack/PAD[7].PTDC/hit270<1>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[1].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      0.615ns (0.282ns logic, 0.333ns route)
+                                                       (45.9% logic, 54.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[1].Hitin270 (SLICE_X2Y27.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.611ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[0].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[1].Hitin270 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.615ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.116 - 0.112)
+  Source Clock:         TDC_datapack/clk250_270 rising at 4.000ns
+  Destination Clock:    TDC_datapack/clk250_270 rising at 4.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[0].Hitin270 to TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[1].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y27.DQ       Tcko                  0.234   TDC_datapack/PAD[5].PTDC/hit270<0>
+                                                       TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[0].Hitin270
+    SLICE_X2Y27.DX       net (fanout=1)        0.333   TDC_datapack/PAD[5].PTDC/hit270<0>
+    SLICE_X2Y27.CLK      Tckdi       (-Th)    -0.048   TDC_datapack/PAD[5].PTDC/hit270<1>
+                                                       TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[1].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      0.615ns (0.282ns logic, 0.333ns route)
+                                                       (45.9% logic, 54.1% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_TDC_datapack_clk250_270 = PERIOD TIMEGRP "TDC_datapack/clk250_270" 4 ns
+        HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 3.520ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[9].PTDC/hit270<0>/CLK
+  Logical resource: TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[0].Hitin270/CK
+  Location pin: SLICE_X0Y4.CLK
+  Clock network: TDC_datapack/clk250_270
+--------------------------------------------------------------------------------
+Slack: 3.520ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[8].PTDC/hit270<0>/CLK
+  Logical resource: TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[0].Hitin270/CK
+  Location pin: SLICE_X0Y9.CLK
+  Clock network: TDC_datapack/clk250_270
+--------------------------------------------------------------------------------
+Slack: 3.520ns (period - min period limit)
+  Period: 4.000ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: TDC_datapack/PAD[7].PTDC/hit270<0>/CLK
+  Logical resource: TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Hitin270/CK
+  Location pin: SLICE_X0Y14.CLK
+  Clock network: TDC_datapack/clk250_270
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG1_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG2_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG3_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG4_path" TIG;
+
+ 20 paths analyzed, 20 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Pipeline270 (SLICE_X10Y22.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     2.853ns (data path - clock path skew + uncertainty)
+  Source:               TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Pipeline270 (FF)
+  Data Path Delay:      1.999ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.647ns (1.341 - 1.988)
+  Source Clock:         TDC_datapack/clk250_90 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin270 to TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Pipeline270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y21.DQ       Tcko                  0.525   TDC_datapack/PAD[6].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin270
+    SLICE_X10Y22.DX      net (fanout=1)        1.360   TDC_datapack/PAD[6].PTDC/hit270<4>
+    SLICE_X10Y22.CLK     Tdick                 0.114   TDC_datapack/PAD[6].PTDC/pipeline270<0>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[0].Pipeline270
+    -------------------------------------------------  ---------------------------
+    Total                                      1.999ns (0.639ns logic, 1.360ns route)
+                                                       (32.0% logic, 68.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[0].Pipeline270 (SLICE_X10Y34.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     2.851ns (data path - clock path skew + uncertainty)
+  Source:               TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[0].Pipeline270 (FF)
+  Data Path Delay:      1.999ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.645ns (1.350 - 1.995)
+  Source Clock:         TDC_datapack/clk250_90 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[4].Hitin270 to TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[0].Pipeline270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y33.DQ       Tcko                  0.525   TDC_datapack/PAD[4].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[4].Hitin270
+    SLICE_X10Y34.DX      net (fanout=1)        1.360   TDC_datapack/PAD[4].PTDC/hit270<4>
+    SLICE_X10Y34.CLK     Tdick                 0.114   TDC_datapack/PAD[4].PTDC/pipeline270<0>
+                                                       TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[0].Pipeline270
+    -------------------------------------------------  ---------------------------
+    Total                                      1.999ns (0.639ns logic, 1.360ns route)
+                                                       (32.0% logic, 68.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Pipeline270 (SLICE_X10Y15.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     2.849ns (data path - clock path skew + uncertainty)
+  Source:               TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Pipeline270 (FF)
+  Data Path Delay:      1.999ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.643ns (1.414 - 2.057)
+  Source Clock:         TDC_datapack/clk250_90 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin270 to TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Pipeline270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y14.DQ       Tcko                  0.525   TDC_datapack/PAD[7].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin270
+    SLICE_X10Y15.DX      net (fanout=1)        1.360   TDC_datapack/PAD[7].PTDC/hit270<4>
+    SLICE_X10Y15.CLK     Tdick                 0.114   TDC_datapack/PAD[7].PTDC/pipeline270<0>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[0].Pipeline270
+    -------------------------------------------------  ---------------------------
+    Total                                      1.999ns (0.639ns logic, 1.360ns route)
+                                                       (32.0% logic, 68.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PATH "TS_TIG4_path" TIG;
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[0].PTDC/PILELINE_STAGE[0].Pipeline270 (SLICE_X10Y58.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      -0.023ns (datapath - clock path skew - uncertainty)
+  Source:               TDC_datapack/PAD[0].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[0].PTDC/PILELINE_STAGE[0].Pipeline270 (FF)
+  Data Path Delay:      0.506ns (Levels of Logic = 0)
+  Clock Path Skew:      0.322ns (1.018 - 0.696)
+  Source Clock:         TDC_datapack/clk250_90 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[0].PTDC/PILELINE_STAGE[4].Hitin270 to TDC_datapack/PAD[0].PTDC/PILELINE_STAGE[0].Pipeline270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y57.DQ       Tcko                  0.234   TDC_datapack/PAD[0].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[0].PTDC/PILELINE_STAGE[4].Hitin270
+    SLICE_X10Y58.DX      net (fanout=1)        0.224   TDC_datapack/PAD[0].PTDC/hit270<4>
+    SLICE_X10Y58.CLK     Tckdi       (-Th)    -0.048   TDC_datapack/PAD[0].PTDC/pipeline270<0>
+                                                       TDC_datapack/PAD[0].PTDC/PILELINE_STAGE[0].Pipeline270
+    -------------------------------------------------  ---------------------------
+    Total                                      0.506ns (0.282ns logic, 0.224ns route)
+                                                       (55.7% logic, 44.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[0].Pipeline270 (SLICE_X10Y28.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      -0.022ns (datapath - clock path skew - uncertainty)
+  Source:               TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[0].Pipeline270 (FF)
+  Data Path Delay:      0.506ns (Levels of Logic = 0)
+  Clock Path Skew:      0.321ns (0.960 - 0.639)
+  Source Clock:         TDC_datapack/clk250_90 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[4].Hitin270 to TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[0].Pipeline270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y27.DQ       Tcko                  0.234   TDC_datapack/PAD[5].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[4].Hitin270
+    SLICE_X10Y28.DX      net (fanout=1)        0.224   TDC_datapack/PAD[5].PTDC/hit270<4>
+    SLICE_X10Y28.CLK     Tckdi       (-Th)    -0.048   TDC_datapack/PAD[5].PTDC/pipeline270<0>
+                                                       TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[0].Pipeline270
+    -------------------------------------------------  ---------------------------
+    Total                                      0.506ns (0.282ns logic, 0.224ns route)
+                                                       (55.7% logic, 44.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Pipeline270 (SLICE_X10Y46.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      -0.022ns (datapath - clock path skew - uncertainty)
+  Source:               TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Pipeline270 (FF)
+  Data Path Delay:      0.506ns (Levels of Logic = 0)
+  Clock Path Skew:      0.321ns (0.963 - 0.642)
+  Source Clock:         TDC_datapack/clk250_90 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[4].Hitin270 to TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Pipeline270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y45.DQ       Tcko                  0.234   TDC_datapack/PAD[2].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[4].Hitin270
+    SLICE_X10Y46.DX      net (fanout=1)        0.224   TDC_datapack/PAD[2].PTDC/hit270<4>
+    SLICE_X10Y46.CLK     Tckdi       (-Th)    -0.048   TDC_datapack/PAD[2].PTDC/pipeline270<0>
+                                                       TDC_datapack/PAD[2].PTDC/PILELINE_STAGE[0].Pipeline270
+    -------------------------------------------------  ---------------------------
+    Total                                      0.506ns (0.282ns logic, 0.224ns route)
+                                                       (55.7% logic, 44.3% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG5_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG6_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG7_path" TIG;
+
+ 10 paths analyzed, 10 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[4].Hitin180 (SLICE_X9Y37.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     2.127ns (data path - clock path skew + uncertainty)
+  Source:               TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[3].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[4].Hitin180 (FF)
+  Data Path Delay:      1.269ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.651ns (1.345 - 1.996)
+  Source Clock:         TDC_datapack/clk250_180 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[3].Hitin180 to TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[4].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y37.DQ       Tcko                  0.430   TDC_datapack/PAD[3].PTDC/hit180<3>
+                                                       TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[3].Hitin180
+    SLICE_X9Y37.DX       net (fanout=1)        0.725   TDC_datapack/PAD[3].PTDC/hit180<3>
+    SLICE_X9Y37.CLK      Tdick                 0.114   TDC_datapack/PAD[3].PTDC/hit180<4>
+                                                       TDC_datapack/PAD[3].PTDC/PILELINE_STAGE[4].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      1.269ns (0.544ns logic, 0.725ns route)
+                                                       (42.9% logic, 57.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin180 (SLICE_X9Y21.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     2.119ns (data path - clock path skew + uncertainty)
+  Source:               TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[3].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin180 (FF)
+  Data Path Delay:      1.261ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.651ns (1.345 - 1.996)
+  Source Clock:         TDC_datapack/clk250_180 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[3].Hitin180 to TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y21.DQ       Tcko                  0.430   TDC_datapack/PAD[6].PTDC/hit180<3>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[3].Hitin180
+    SLICE_X9Y21.DX       net (fanout=1)        0.717   TDC_datapack/PAD[6].PTDC/hit180<3>
+    SLICE_X9Y21.CLK      Tdick                 0.114   TDC_datapack/PAD[6].PTDC/hit180<4>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      1.261ns (0.544ns logic, 0.717ns route)
+                                                       (43.1% logic, 56.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin180 (SLICE_X9Y4.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     2.118ns (data path - clock path skew + uncertainty)
+  Source:               TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[3].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin180 (FF)
+  Data Path Delay:      1.261ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.650ns (1.410 - 2.060)
+  Source Clock:         TDC_datapack/clk250_180 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[3].Hitin180 to TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y4.DQ        Tcko                  0.430   TDC_datapack/PAD[9].PTDC/hit180<3>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[3].Hitin180
+    SLICE_X9Y4.DX        net (fanout=1)        0.717   TDC_datapack/PAD[9].PTDC/hit180<3>
+    SLICE_X9Y4.CLK       Tdick                 0.114   TDC_datapack/PAD[9].PTDC/hit180<4>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      1.261ns (0.544ns logic, 0.717ns route)
+                                                       (43.1% logic, 56.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PATH "TS_TIG7_path" TIG;
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin180 (SLICE_X9Y4.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.090ns (datapath - clock path skew - uncertainty)
+  Source:               TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[3].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin180 (FF)
+  Data Path Delay:      0.611ns (Levels of Logic = 0)
+  Clock Path Skew:      0.314ns (1.022 - 0.708)
+  Source Clock:         TDC_datapack/clk250_180 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[3].Hitin180 to TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y4.DQ        Tcko                  0.198   TDC_datapack/PAD[9].PTDC/hit180<3>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[3].Hitin180
+    SLICE_X9Y4.DX        net (fanout=1)        0.354   TDC_datapack/PAD[9].PTDC/hit180<3>
+    SLICE_X9Y4.CLK       Tckdi       (-Th)    -0.059   TDC_datapack/PAD[9].PTDC/hit180<4>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      0.611ns (0.257ns logic, 0.354ns route)
+                                                       (42.1% logic, 57.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[4].Hitin180 (SLICE_X9Y9.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.090ns (datapath - clock path skew - uncertainty)
+  Source:               TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[3].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[4].Hitin180 (FF)
+  Data Path Delay:      0.611ns (Levels of Logic = 0)
+  Clock Path Skew:      0.314ns (1.017 - 0.703)
+  Source Clock:         TDC_datapack/clk250_180 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[3].Hitin180 to TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[4].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y9.DQ        Tcko                  0.198   TDC_datapack/PAD[8].PTDC/hit180<3>
+                                                       TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[3].Hitin180
+    SLICE_X9Y9.DX        net (fanout=1)        0.354   TDC_datapack/PAD[8].PTDC/hit180<3>
+    SLICE_X9Y9.CLK       Tckdi       (-Th)    -0.059   TDC_datapack/PAD[8].PTDC/hit180<4>
+                                                       TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[4].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      0.611ns (0.257ns logic, 0.354ns route)
+                                                       (42.1% logic, 57.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin180 (SLICE_X9Y14.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.090ns (datapath - clock path skew - uncertainty)
+  Source:               TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[3].Hitin180 (FF)
+  Destination:          TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin180 (FF)
+  Data Path Delay:      0.611ns (Levels of Logic = 0)
+  Clock Path Skew:      0.314ns (1.027 - 0.713)
+  Source Clock:         TDC_datapack/clk250_180 rising
+  Destination Clock:    TDC_datapack/clk250_0 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[3].Hitin180 to TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin180
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y14.DQ       Tcko                  0.198   TDC_datapack/PAD[7].PTDC/hit180<3>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[3].Hitin180
+    SLICE_X9Y14.DX       net (fanout=1)        0.354   TDC_datapack/PAD[7].PTDC/hit180<3>
+    SLICE_X9Y14.CLK      Tckdi       (-Th)    -0.059   TDC_datapack/PAD[7].PTDC/hit180<4>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin180
+    -------------------------------------------------  ---------------------------
+    Total                                      0.611ns (0.257ns logic, 0.354ns route)
+                                                       (42.1% logic, 57.9% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG8_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG9_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG10_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG11_path" TIG;
+
+ 10 paths analyzed, 10 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin270 (SLICE_X8Y14.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     2.008ns (data path - clock path skew + uncertainty)
+  Source:               TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[3].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Data Path Delay:      1.149ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.652ns (1.413 - 2.065)
+  Source Clock:         TDC_datapack/clk250_270 rising
+  Destination Clock:    TDC_datapack/clk250_90 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[3].Hitin270 to TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y14.DQ       Tcko                  0.476   TDC_datapack/PAD[7].PTDC/hit270<3>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[3].Hitin270
+    SLICE_X8Y14.DX       net (fanout=1)        0.588   TDC_datapack/PAD[7].PTDC/hit270<3>
+    SLICE_X8Y14.CLK      Tdick                 0.085   TDC_datapack/PAD[7].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[7].PTDC/PILELINE_STAGE[4].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      1.149ns (0.561ns logic, 0.588ns route)
+                                                       (48.8% logic, 51.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin270 (SLICE_X8Y21.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     2.008ns (data path - clock path skew + uncertainty)
+  Source:               TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[3].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Data Path Delay:      1.149ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.652ns (1.344 - 1.996)
+  Source Clock:         TDC_datapack/clk250_270 rising
+  Destination Clock:    TDC_datapack/clk250_90 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[3].Hitin270 to TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y21.DQ       Tcko                  0.476   TDC_datapack/PAD[6].PTDC/hit270<3>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[3].Hitin270
+    SLICE_X8Y21.DX       net (fanout=1)        0.588   TDC_datapack/PAD[6].PTDC/hit270<3>
+    SLICE_X8Y21.CLK      Tdick                 0.085   TDC_datapack/PAD[6].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[6].PTDC/PILELINE_STAGE[4].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      1.149ns (0.561ns logic, 0.588ns route)
+                                                       (48.8% logic, 51.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[4].Hitin270 (SLICE_X8Y33.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     2.008ns (data path - clock path skew + uncertainty)
+  Source:               TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[3].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Data Path Delay:      1.149ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.652ns (1.351 - 2.003)
+  Source Clock:         TDC_datapack/clk250_270 rising
+  Destination Clock:    TDC_datapack/clk250_90 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[3].Hitin270 to TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[4].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y33.DQ       Tcko                  0.476   TDC_datapack/PAD[4].PTDC/hit270<3>
+                                                       TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[3].Hitin270
+    SLICE_X8Y33.DX       net (fanout=1)        0.588   TDC_datapack/PAD[4].PTDC/hit270<3>
+    SLICE_X8Y33.CLK      Tdick                 0.085   TDC_datapack/PAD[4].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[4].PTDC/PILELINE_STAGE[4].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      1.149ns (0.561ns logic, 0.588ns route)
+                                                       (48.8% logic, 51.2% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PATH "TS_TIG11_path" TIG;
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin270 (SLICE_X8Y4.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.000ns (datapath - clock path skew - uncertainty)
+  Source:               TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[3].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Data Path Delay:      0.520ns (Levels of Logic = 0)
+  Clock Path Skew:      0.313ns (1.021 - 0.708)
+  Source Clock:         TDC_datapack/clk250_270 rising
+  Destination Clock:    TDC_datapack/clk250_90 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[3].Hitin270 to TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y4.DQ        Tcko                  0.200   TDC_datapack/PAD[9].PTDC/hit270<3>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[3].Hitin270
+    SLICE_X8Y4.DX        net (fanout=1)        0.279   TDC_datapack/PAD[9].PTDC/hit270<3>
+    SLICE_X8Y4.CLK       Tckdi       (-Th)    -0.041   TDC_datapack/PAD[9].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[9].PTDC/PILELINE_STAGE[4].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      0.520ns (0.241ns logic, 0.279ns route)
+                                                       (46.3% logic, 53.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[4].Hitin270 (SLICE_X8Y9.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.000ns (datapath - clock path skew - uncertainty)
+  Source:               TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[3].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Data Path Delay:      0.520ns (Levels of Logic = 0)
+  Clock Path Skew:      0.313ns (1.016 - 0.703)
+  Source Clock:         TDC_datapack/clk250_270 rising
+  Destination Clock:    TDC_datapack/clk250_90 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[3].Hitin270 to TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[4].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y9.DQ        Tcko                  0.200   TDC_datapack/PAD[8].PTDC/hit270<3>
+                                                       TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[3].Hitin270
+    SLICE_X8Y9.DX        net (fanout=1)        0.279   TDC_datapack/PAD[8].PTDC/hit270<3>
+    SLICE_X8Y9.CLK       Tckdi       (-Th)    -0.041   TDC_datapack/PAD[8].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[8].PTDC/PILELINE_STAGE[4].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      0.520ns (0.241ns logic, 0.279ns route)
+                                                       (46.3% logic, 53.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[4].Hitin270 (SLICE_X8Y27.DX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.000ns (datapath - clock path skew - uncertainty)
+  Source:               TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[3].Hitin270 (FF)
+  Destination:          TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[4].Hitin270 (FF)
+  Data Path Delay:      0.520ns (Levels of Logic = 0)
+  Clock Path Skew:      0.313ns (0.959 - 0.646)
+  Source Clock:         TDC_datapack/clk250_270 rising
+  Destination Clock:    TDC_datapack/clk250_90 rising
+  Clock Uncertainty:    0.207ns
+
+  Clock Uncertainty:          0.207ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.158ns
+    Phase Error (PE):           0.120ns
+
+  Minimum Data Path at Fast Process Corner: TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[3].Hitin270 to TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[4].Hitin270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y27.DQ       Tcko                  0.200   TDC_datapack/PAD[5].PTDC/hit270<3>
+                                                       TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[3].Hitin270
+    SLICE_X8Y27.DX       net (fanout=1)        0.279   TDC_datapack/PAD[5].PTDC/hit270<3>
+    SLICE_X8Y27.CLK      Tckdi       (-Th)    -0.041   TDC_datapack/PAD[5].PTDC/hit270<4>
+                                                       TDC_datapack/PAD[5].PTDC/PILELINE_STAGE[4].Hitin270
+    -------------------------------------------------  ---------------------------
+    Total                                      0.520ns (0.241ns logic, 0.279ns route)
+                                                       (46.3% logic, 53.7% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG12_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK_IN_N
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_IN_N       |    2.853|         |         |         |
+CLK_IN_P       |    2.853|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK_IN_P
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_IN_N       |    2.853|         |         |         |
+CLK_IN_P       |    2.853|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 360 paths, 0 nets, and 666 connections
+
+Design statistics:
+   Minimum period:   1.737ns{1}   (Maximum frequency: 575.705MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Mar 16 08:01:18 2026 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 431 MB
+
+
+

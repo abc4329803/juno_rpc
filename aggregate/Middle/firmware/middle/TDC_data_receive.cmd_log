@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/ise/VM_FILE/middle/TDC_data_receive.xst" -ofn "/home/ise/VM_FILE/middle/TDC_data_receive.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top.ucf -p xc6slx9-ftg256-2 TDC_data_receive.ngc TDC_data_receive.ngd  

@@ -1,0 +1,45 @@
+# Vivado generated cache and build files
+**/.cache/
+**/*.cache/
+**/vivado.jou
+**/vivado.log
+**/vivado_*.backup.jou
+**/vivado_*.backup.log
+**/vivado_pid*.str
+
+# IP user files (generated, not source)
+**/*.ip_user_files/
+
+# Simulation files
+**/*.sim/
+
+# Generated output products
+**/*.gen/
+
+# Hardware files (generated)
+**/*.hw/
+
+# Vivado project runs (synthesis/implementation results)
+**/*.runs/
+
+# Webtalk
+**/webtalk*.jou
+**/webtalk*.log
+
+# Vivado journal/log backups
+**/*.jou
+**/*.log
+
+# Modelsim / Questa generated
+**/modelsim_lib/
+**/work/
+**/*.wlf
+
+# Bitstream and other build outputs
+**/*.bit
+**/*.bin
+**/*.mcs
+**/*.prm
+
+# IP upgrade log
+**/ip_upgrade.log
