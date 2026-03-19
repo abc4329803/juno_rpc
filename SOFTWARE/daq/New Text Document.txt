@@ -1,0 +1,24 @@
+# cd G:\fpga_tdc\FPGA\muon_TDC
+
+# 设置Vivado环境
+set_part {xc7k325tffg900-2}    ;# 设置目标FPGA型号，可以根据你的具体型号修改
+open_hw                        ;# 打开硬件管理器
+
+# 连接到硬件设备
+connect_hw_server              ;# 连接到硬件服务器
+open_hw_target                ;# 打开目标设备
+
+# 加载.bit文件
+set BIT_FILE_PATH "path_to_your_bitfile.bit"  ;# 设置bit文件的路径
+program_hw_devices $BIT_FILE_PATH  ;# 烧写bit文件到FPGA
+
+# 验证烧写是否成功
+if {[catch {program_hw_devices $BIT_FILE_PATH} result]} {
+    puts "Error programming device: $result"
+} else {
+    puts "Device programmed successfully!"
+}
+
+# 断开与硬件的连接
+disconnect_hw_target
+close_hw

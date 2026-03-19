@@ -1,0 +1,6 @@
+com口：115200
+
+1. sdb fs；
+2. init  add ip set 192.168.10.33
+3. ip set 192.168.10.33
+4. sdb ls

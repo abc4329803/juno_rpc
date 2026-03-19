@@ -1,0 +1,52 @@
+source read_idcode.tcl
+# open_hw_manager
+# connect_hw_server -xvc_url 192.168.1.41:3023
+ERROR: [Common 17-170] Unknown option '-xvc_url', please type 'connect_hw_server -help' for usage info.
+source read_idcode.tcl
+# open_hw_target -xvc_url 192.168.1.41:3023
+ERROR: [Labtools 27-3093] Current hw_server not set
+ERROR: [Labtoolstcl 44-142] There is no current hw_target and no option value given for 'hw_target'.
+source read_idcode.tcl
+# open_hw_manager
+# open_hw_target -xvc_url 192.168.1.41:3023
+ERROR: [Labtools 27-3093] Current hw_server not set
+ERROR: [Labtoolstcl 44-142] There is no current hw_target and no option value given for 'hw_target'.
+source read_idcode.tcl
+# open_hw_manager
+# connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1
+  **** Build date : May 22 2024 at 19:19:14
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Apr 27 2024-09:40:49
+    **** Build number : 2024.1.1714182049
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+# open_hw_target -xvc_url 192.168.1.41:3023
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:62522
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/192.168.1.41:3023
+# set dev [lindex [get_hw_devices] 0]
+# current_hw_device $dev
+# refresh_hw_device -update_hw_probes false $dev
+INFO: [Labtools 27-1434] Device xcku11p (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+# puts "FPGA Part: [get_property PART $dev]"
+FPGA Part: xcku11p
+# puts "FPGA IDCODE: [get_property IDCODE $dev]"
+FPGA IDCODE: 00000100101001001110000010010011
+04A4E093
