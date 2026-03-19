@@ -1,0 +1,13 @@
+pcb: Note 5996: Using Config File C:\MentorGraphics\2005PADS\SDD_HOME\standard\partlist.ini
+pcb: Warning 5733: Parameterized attribute DESCRIPTION=FERRITE, 78OHM @ 25MHZ on FUNC $40I275: viewbase: Error 338: Undefined variable(s) encountered
+pcb: Warning 5733: Parameterized attribute DESCRIPTION=FERRITE, 78OHM @ 25MHZ on FUNC $41I210: viewbase: Error 338: Undefined variable(s) encountered
+pcb: Warning 5733: Parameterized attribute DESCRIPTION=FERRITE, 78OHM @ 25MHZ on FUNC $43I293: viewbase: Error 338: Undefined variable(s) encountered
+pcb: Warning 5733: Parameterized attribute DESCRIPTION=FERRITE, 78OHM @ 25MHZ on FUNC $44I198: viewbase: Error 338: Undefined variable(s) encountered
+pcb: Warning 5733: Parameterized attribute DESCRIPTION=FERRITE, 78OHM @ 25MHZ on FUNC $46I956: viewbase: Error 338: Undefined variable(s) encountered
+pcb: Warning 5720: Check zc702.err for VIEWBASE messages
+pcb: Note 5792: func dictionary entry $36I506 at line 327 was deleted
+pcb: Note 5792: func dictionary entry $29I777 at line 521 was deleted
+pcb: Note 5792: func dictionary entry $29I768 at line 525 was deleted
+pcb: Note 5792: func dictionary entry $29I747 at line 531 was deleted
+pcb: Note 5792: func dictionary entry $29I746 at line 532 was deleted
+pcb: Note 5792: func dictionary entry $29I745 at line 533 was deleted

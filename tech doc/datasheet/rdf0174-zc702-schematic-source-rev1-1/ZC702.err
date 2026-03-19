@@ -1,0 +1,20 @@
+viewbase: Note 424: Net 'GND' for group 'ZC702' and Net 'PWRCTL1_VCC2_EA_N' for group 'ZC702' are connected by NET_ALIAS.
+viewbase: Note 425: Net 'GND' is selected as the primary net. The secondary net 'PWRCTL1_VCC2_EA_N' will be removed and pins attached to the secondary net will be attached to the primary net.
+viewbase: Note 424: Net 'GND' for group 'ZC702' and Net 'PWRCTL1_VCC4_EA_N' for group 'ZC702' are connected by NET_ALIAS.
+viewbase: Note 425: Net 'GND' is selected as the primary net. The secondary net 'PWRCTL1_VCC4_EA_N' will be removed and pins attached to the secondary net will be attached to the primary net.
+viewbase: Note 424: Net 'GND' for group 'ZC702' and Net 'PWRCTL2_VCC2_EA_N' for group 'ZC702' are connected by NET_ALIAS.
+viewbase: Note 425: Net 'GND' is selected as the primary net. The secondary net 'PWRCTL2_VCC2_EA_N' will be removed and pins attached to the secondary net will be attached to the primary net.
+viewbase: Note 424: Net 'GND' for group 'ZC702' and Net 'PWRCTL2_VCC4_EA_N' for group 'ZC702' are connected by NET_ALIAS.
+viewbase: Note 425: Net 'GND' is selected as the primary net. The secondary net 'PWRCTL2_VCC4_EA_N' will be removed and pins attached to the secondary net will be attached to the primary net.
+viewbase: Note 424: Net 'GND' for group 'ZC702' and Net 'PWRCTL3_VCC2_EA_N' for group 'ZC702' are connected by NET_ALIAS.
+viewbase: Note 425: Net 'GND' is selected as the primary net. The secondary net 'PWRCTL3_VCC2_EA_N' will be removed and pins attached to the secondary net will be attached to the primary net.
+viewbase: Note 424: Net 'GND' for group 'ZC702' and Net 'PWRCTL3_VCC1_EA_N' for group 'ZC702' are connected by NET_ALIAS.
+viewbase: Note 425: Net 'GND' is selected as the primary net. The secondary net 'PWRCTL3_VCC1_EA_N' will be removed and pins attached to the secondary net will be attached to the primary net.
+viewbase: Note 424: Net 'GND' for group 'ZC702' and Net 'PWRCTL2_VCC3_EA_N' for group 'ZC702' are connected by NET_ALIAS.
+viewbase: Note 425: Net 'GND' is selected as the primary net. The secondary net 'PWRCTL2_VCC3_EA_N' will be removed and pins attached to the secondary net will be attached to the primary net.
+viewbase: Note 424: Net 'GND' for group 'ZC702' and Net 'PWRCTL2_VCC1_EA_N' for group 'ZC702' are connected by NET_ALIAS.
+viewbase: Note 425: Net 'GND' is selected as the primary net. The secondary net 'PWRCTL2_VCC1_EA_N' will be removed and pins attached to the secondary net will be attached to the primary net.
+viewbase: Note 424: Net 'GND' for group 'ZC702' and Net 'PWRCTL1_VCC3_EA_N' for group 'ZC702' are connected by NET_ALIAS.
+viewbase: Note 425: Net 'GND' is selected as the primary net. The secondary net 'PWRCTL1_VCC3_EA_N' will be removed and pins attached to the secondary net will be attached to the primary net.
+viewbase: Note 424: Net 'GND' for group 'ZC702' and Net 'PWRCTL1_VCC1_EA_N' for group 'ZC702' are connected by NET_ALIAS.
+viewbase: Note 425: Net 'GND' is selected as the primary net. The secondary net 'PWRCTL1_VCC1_EA_N' will be removed and pins attached to the secondary net will be attached to the primary net.
